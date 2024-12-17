@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beluszky Aranyköpései - Random</title>
+    <link rel="stylesheet" href="Beluszky Aranyköpései.css">
+    <link rel="icon" href="Mini Beluszky.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Mini Beluszky.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Beluszky Aranyköpései</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="Beluszky Aranyköpései.html">Válogatás</a></li>
+                    <li><a href="Beluszky Aranyköpései - Random.html">Random</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="coupon">
+        <img src="Aranyköpés.jpg" alt="Kép" class="coupon-image">
+        <div class="coupon-text">
+            <h2>Aranyköpés</h2>
+            <p>Bár itt aranyköpéseket írunk le, megnyugodhat nem lesz nedves. Elméletileg. Ugyanakkor ajánjuk a papírzsebkendő kézhez ragadását, hisz örömkönnyekben gazdag időtöltés lesz, ezt garantáljuk!</p>
+        </div>
+    </div>
+
+    <div class="coupon2">
+        <div class="coupon-text2">
+            <h2>Köszönetnyílvántás</h2>
+            <p>Egy biztos: Nem minden hős visel köpenyt! Köszönjük a Legendának, aki legjobb gondolataival és eszével színesíti társadalmunkat, és persze mindennapjainkat! A legnagyobb, a csodálatos, a jószívű, az egyetlen, örökkké (szigorúan 3 k-val): Beluszky Tamás!</p>
+        </div>
+        <img src="Beluszky.jpg" alt="Kép" class="coupon-image2">
+    </div>
+
+    <div class="coupon" style="background-color: #ffc300; color: #000;">
+        <img src="Nevetés.jpg" alt="Kép" class="coupon-image">
+        <div class="coupon-text">
+            <h2>Beluszky féle Aranyköpés minden alkalomra.</h2>
+            <p>Nincs ötlete mivel tudná megnevetetni a társaságot. Sebaj, mi megoldjuk. Beluszky gondolatai minden alkalommal garantált röhögőgörcsöt okoz minden kedves hallgatónak! Hisz a Beluszky gondolatok minden alkalommal célt érnek.</p>
+        </div>
+    </div>
+
+    <div class="quote-wrapper">
+        <div class="quote-container">
+            <p>A random Beluszky Aranyköpésed: </p>
+            <p id="random-quote" class="quote"></p>
+            <img src="Másolás fehér.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard()">
+        </div>
+        <button onclick="reloadPage()">Új</button>
+    </div>
+    
+
+    <script>
+        const quotes = [
+            "Színvonaltalan, gyerekes, elszomorító",
+            "Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.",
+            "Megkérdőjelezem, hogy most mi a munkám értelme?",
+            "Ha mégegyszer meg látom a kezét, hogy lendít!",
+            "Szolíd, tudatos, tisztelettudó, csak a Kristóf!",
+            "Halihó!",
+            "Belátással, inteligenciával kéne viselkedni.",
+            "Noh!",
+            "Engem nem érdekel ki, csak az, hogy ne legyen.",
+            "Meglepő, szarkasztikus és humoros",
+            "Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.",
+            "Elfogadom a helyzeted, csak egyáltalán nem érdekel."
+        ];
+
+        function getRandomQuote() {
+            const randomIndex = Math.floor(Math.random() * quotes.length);
+            return quotes[randomIndex];
+        }
+
+        function copyToClipboard() {
+            const text = document.getElementById('random-quote').innerText;
+            const additionalText = " - Beluszky";
+            const fullText = text + additionalText;
+            navigator.clipboard.writeText(fullText).then(() => {
+                alert('Szöveg kimásolva: ' + fullText);
+            }).catch(err => {
+                console.error('Hiba történt a másolás során: ', err);
+            });
+        }
+
+        function reloadPage() {
+            location.reload();
+        }
+
+        document.getElementById('random-quote').innerText = getRandomQuote();
+    </script>
+
+    <footer>
+        <p>Készítette: A te neved</p>
+        <p>Legutolsó módosítás dátuma: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
+</body>
+</html>
+        
