@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Arial Rounded MT';
+    src: url('arial-mt-cufonfonts/ARIALROUNDEDMT.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Arial Rounded MT Bold';
+    src: url('arial-mt-cufonfonts/ARIALROUNDEDMTEXTRABOLD.TTF');
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Arial Rounded MT Bold';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+}
+
+video {
+    width: 500px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
