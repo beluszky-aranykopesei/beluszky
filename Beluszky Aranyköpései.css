@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Arial Rounded MT';
-    src: url('arial-mt-cufonfonts/ARIALROUNDEDMT.TTF') format('truetype');
+    src: url('ARIALROUNDEDMT.TTF') format('truetype');
 }
 
 @font-face {
     font-family: 'Arial Rounded MT Bold';
-    src: url('arial-mt-cufonfonts/ARIALROUNDEDMTEXTRABOLD.TTF');
+    src: url('ARIALROUNDEDMTEXTRABOLD.TTF') format('truetype');
 }
 
 body {
