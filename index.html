@@ -4,15 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beluszky Aranyköpései</title>
-    <link rel="stylesheet" href="Karbantartás.css">
+    <link rel="stylesheet" href="Beluszky Aranyköpései.css">
+    <link rel="icon" href="Mini Beluszky.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Mini Beluszky.png" type="image/x-icon">
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay muted playsinline>
-            <source src="Karbantartás.mp4" type="video/mp4">
-            Az Ön böngészője nem támogatja a videó lejátszását.
-        </video>
-        <p class="message">Az aranyköpéseket is kell frissíteni. A karbantartás során kijavítjuk hibáinkat! Igérjük nem tart sokáig.</p>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Beluszky Aranyköpései</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="https://beluszky-aranykopesei.vercel.app/">Válogatás</a></li>
+                    <li><a href="https://beluszky-aranyk-p-sei-random.vercel.app/">Random</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="coupon">
+        <img src="Aranyköpés.jpg" alt="Kép" class="coupon-image">
+        <div class="coupon-text">
+            <h2>Aranyköpés</h2>
+            <p>Bár itt aranyköpéseket írunk le, megnyugodhat nem lesz nedves. Elméletileg. Ugyanakkor ajánjuk a papírzsebkendő kézhez ragadását, hisz örömkönnyekben gazdag időtöltés lesz, ezt garantáljuk!</p>
+        </div>
     </div>
+
+    <div class="coupon2">
+        <div class="coupon-text2">
+            <h2>Köszönetnyílvántás</h2>
+            <p>Egy biztos: Nem minden hős visel köpenyt! Köszönjük a Legendának, aki legjobb gondolataival és eszével színesíti társadalmunkat, és persze mindennapjainkat! A legnagyobb, a csodálatos, a jószívű, az egyetlen, örökkké (szigorúan 3 k-val): Beluszky Tamás!</p>
+        </div>
+        <img src="Beluszky.jpg" alt="Kép" class="coupon-image2">
+    </div>
+
+    <ul class="list">
+        <li>Színvonaltalan, gyerekes, elszomorító
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Megkérdőjelezem, hogy most mi a munkám értelme?
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Ha mégegyszer meg látom a kezét, hogy lendít!
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Szolíd, tudatos, tisztelettudó, csak a Kristóf!
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Halihó!
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Belátással, inteligenciával kéne viselkedni.
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Noh!
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Engem nem érdekel ki, csak az, hogy ne legyen.
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Meglepő, szarkasztikus és humoros
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li>Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+        <li class="utolsó">Elfogadom a helyzeted, csak egyáltalán nem érdekel.
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        </li>
+    </ul>
+    
+    <script>
+        function copyToClipboard(element) {
+            const text = element.parentElement.innerText;
+            const additionalText = " - Beluszky";
+            const fullText = text + additionalText;
+            navigator.clipboard.writeText(fullText).then(() => {
+                alert('Szöveg kimásolva: ' + fullText);
+            }).catch(err => {
+                console.error('Hiba történt a másolás során: ', err);
+            });
+        }
+    </script>
+
+    <footer>
+        <p>Készítette: A te neved</p>
+        <p>Legutolsó módosítás dátuma: <span id="last-modified"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById('last-modified').textContent = document.lastModified;
+    </script>
 </body>
 </html>
