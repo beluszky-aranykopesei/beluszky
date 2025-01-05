@@ -1,15 +1,5 @@
-@font-face {
-    font-family: 'Arial Rounded MT';
-    src: url('ARIALROUNDEDMT.TTF') format('truetype');
-}
-
-@font-face {
-    font-family: 'Arial Rounded MT Bold';
-    src: url('ARIALROUNDEDMTEXTRABOLD.TTF') format('truetype');
-}
-
 body {
-    font-family: 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0px;
     padding: 0;
 }
@@ -74,7 +64,7 @@ body {
 
 .coupon-text p {
     margin: 0;
-    font-family: 'Arial Rounded MT'
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .coupon2 {
@@ -105,7 +95,7 @@ body {
 
 .coupon-text2 p {
     margin: 0;
-    font-family: 'Arial Rounded MT'
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .list li {
@@ -159,7 +149,7 @@ footer p {
 }
 
 .quote  {
-    font-family: 'Arial Rounded MT';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 10px;
 }
 
@@ -167,4 +157,9 @@ button {
     background-color: #000;
     color: #fff;
     border-radius: 5px;
+}
+
+.menu {
+    width: 50px;
+    align-self: right;
 }
