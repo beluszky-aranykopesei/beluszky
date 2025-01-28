@@ -12,6 +12,18 @@ body {
     padding: 20px;
 }
 
+h1 {
+    font-size: 32px;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .header-title {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+}
+
 .logo {
     margin: 0;
     color: white;
@@ -190,4 +202,9 @@ button {
 
 .uj {
     width: 20px;
+
+}
+
+.uj_szoveg {
+    color: #cd9d00;
 }
