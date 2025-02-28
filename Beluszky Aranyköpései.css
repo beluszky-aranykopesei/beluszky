@@ -133,8 +133,8 @@ footer p {
 }
 
 .quote-container {
-    background-color: #000;
-    color: white;
+    background-color: #ffc300;
+    color: #000000;
     padding: 20px;
     border-radius: 15px;
     display: flex;
@@ -143,6 +143,8 @@ footer p {
     max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .copy-icon {
@@ -207,4 +209,8 @@ button {
 
 .uj_szoveg {
     color: #cd9d00;
+}
+
+.napi {
+    color: #000000;
 }
