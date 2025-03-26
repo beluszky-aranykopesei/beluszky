@@ -114,6 +114,11 @@
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
+        <li class="uj_szoveg">Én legalább nem vagyok olyan monoton, mint a tegnapi előadóm.
+            <img src="Új.png" alt="Új idézet" class="uj">
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+        </li>
         <li>Nem film, csak egy kicsit nagyobb képillusztráció
              <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
              <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
@@ -251,13 +256,13 @@
                 popup.style.display = 'block';
                 overlay.style.display = 'block';
                 setTimeout(() => {
-                    popup.style.top = '15%';
+                    popup.style.top = '50%';
                 }, 100);
             });
         });
 
         const hidePopup = () => {
-            popup.style.top = '-15%'; // Kicsúszás animáció
+            popup.style.top = '-50%'; // Kicsúszás animáció
             setTimeout(() => {
                 popup.style.display = 'none';
                 overlay.style.display = 'none';
