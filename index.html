@@ -51,10 +51,10 @@
 
     <div class="coupon2" style="background-color: #ffc300 ; color: #000;">
         <div class="coupon-text2">
-            <h2>Újítottunk, hogy kényelmesebb legyen!</h2>
-            <p>Gyönyörű ötleteink vannak, és sorra valósítjuk meg őket! A ti kényelmetek érdekében eljött a nagyítás funkció, mellyel könyeddén mutathattok meg egy-egy Aranyköpést bárkinek. Jó szórakozást és ne feledjétek, az egyetlen, a chodálatos mindig veletek van!</p>
+            <h2>Jobb, mint az idősotthonban. Bingóóóó!</h2>
+            <p>Szórakozz egy jót Beluszkyval, figyelj és fülelj, töltsd ki a bingólapot és nézd meg legújabb Aranyköpéseinket! Igérjük nagyon frissek, ropogósak az új Aranyköpések, úgyhogy húzz bele, ne maradj le! Kattints a Bingo ikonra a szöveg mellett.</p>
         </div>
-        <img src="Szem.png" alt="Kép" class="coupon-image2">
+        <span class="bingo"><img src="Bingo.png" alt="Kép" class="coupon-image2" id="bingoButton" class="icon"></span>
         <style>
             .coupon-image2 {
             background-color: #000;
@@ -68,54 +68,74 @@
     </div>
 
     <h2>Eddig összegyűjtött köpéseink:</h2>
+    <div id="newQuotes" class="new-quotes">
+    <ul class="">
+        <li class="uj_szoveg">Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.
+            <img src="Bingo.png" alt="A Bingó kitöltéséért" class="bingo-nyeremény">
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+        </li>
+        <li class="uj_szoveg">Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.
+            <img src="Bingo.png" alt="A Bingó kitöltéséért" class="bingo-nyeremény">
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+        </li>
+        <li class="uj_szoveg">Nem elesett, hanem megölték
+            <img src="Bingo.png" alt="A Bingó kitöltéséért" class="bingo-nyeremény">
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+        </li>
+        <li class="uj_szoveg">Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos
+            <img src="Bingo.png" alt="A Bingó kitöltéséért" class="bingo-nyeremény">
+            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+        </li>
+        <li class="uj_szoveg">Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír
+        <img src="Bingo.png" alt="A Bingó kitöltéséért" class="bingo-nyeremény">
+        <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+        <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+    </li>
+    </ul>
+    
+    </div>
     <ul class="list">
-        <li class="uj_szoveg">Hát ez egyenlőre nagyon mini.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Hát ez egyenlőre nagyon mini.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Aha, itt lehet nagyítani!
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Aha, itt lehet nagyítani!
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Nyilván ennek megvan a saját csínyja, bínyja.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Nyilván ennek megvan a saját csínyja, bínyja.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Jah, hétfőn, bocsánat szamár vagyok.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Jah, hétfőn, bocsánat szamár vagyok.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Aaa... mondjad már, könyörgök! Adók! Köszönöm!
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Aaa... mondjad már, könyörgök! Adók! Köszönöm!
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Az oroszok annyian vannak, mint az oroszok.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Az oroszok annyian vannak, mint az oroszok.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Kicsike, mozgékony, de nehezen elsüllyeszthető.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Kicsike, mozgékony, de nehezen elsüllyeszthető.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">És valójában ők hozták létre a mai Nyű Jorkot.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>És valójában ők hozták létre a mai Nyű Jorkot.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">A körözési listán, a kőrözött személy...
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>A körözési listán, a kőrözött személy...
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Én legalább nem vagyok olyan monoton, mint a tegnapi előadóm.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Én legalább nem vagyok olyan monoton, mint a tegnapi előadóm.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
@@ -236,14 +256,97 @@
     <footer>
         <p>Készítette: A te neved</p>
         <p>Legutolsó módosítás dátuma: <span id="last-modified"></span></p>
-        <p onclick="version">Verziószám: v.02.10</p>
+        <p onclick="version">Verziószám: v.02.11</p>
         <div id="version-info"></div>
     </footer>
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup"></div>
+    <div id="bingoOverlay" class="bingo-overlay"> <!-- Az ID megváltozott -->
+        <div id="bingoBoard" class="bingo-board">
+            <table>
+                <!-- A cellákat a JavaScript tölti ki -->
+            </table>
+            <button id="rerollButton" class="rerollButton">Újrasorsolás</button>
+            <button id="closeButton">Bezár</button>
+        </div>
+    </div>
 
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const bingoButton = document.getElementById("bingoButton");
+            const bingoOverlay = document.getElementById("bingoOverlay"); // Új név
+            const bingoBoard = document.querySelector("#bingoBoard table");
+            const rerollButton = document.getElementById("rerollButton");
+            const closeButton = document.getElementById("closeButton");
+            const newQuotes = document.getElementById("newQuotes");
+
+            const phrases = [
+                '"Szűnjön meg a sus, maradjon a kuss!"', "Megánéletről beszél", "Valaki nevét elfelejti", "Csak a címet írja fel", "Random Aranyköpés",
+                "Sokáig egy helyben ül", '"Halihó!"', '"Shhhhh..."', "Némán ír a táblára", "Padra támaszkodik 1 ujjal",
+                "Késik az óráról", "Hatásszünet", "Külföldiül beszél", "Másik osztályt fikáz", '"Noh!"',
+                "Elír egy szót", "Új Aranyköpéssel tölti meg az oldalt", "Leszidja az osztályt", '"Figyelem"', "Valamit a tanáriban hagy",
+                '"Szervusztok!"', "Random új témába kezd", "Sajnáltatja magát", "Megint hosszú esszét ad a dolgozatban, a kérés ellenére", "Testével takarja ki a táblát",
+                "Random sétálgat a folyosón", "Telefonon beszél valakivel", "Megvárja, amíg csend lesz", "Elhagy egy dolgozatot", "Feltartja Keller tanárnőt",
+                "A feje mellett viszi a laptopját.", "Két ujja közé rakja be a krétát", "Nem hallja, amit mondanak neki", "Random cikkeket nyit meg, illusztráció helyett.", "Hosszasan kinéz az ablakon"
+            ];
+
+            let clickedCells = 0; // A kijelölt cellák számának nyilvántartása
+            let notificationShown = false; // Nyomon követi, hogy az értesítés már megjelent-e
+
+            bingoButton.addEventListener("click", () => {
+                bingoOverlay.style.display = "flex"; // Az új ID-t használjuk
+                generateBingoBoard();
+            });
+
+            rerollButton.addEventListener("click", () => {
+                if (!notificationShown) {
+                    alert("A bingó alaphelyzetbe áll, az eddig kitöltött rubrikák eltűnnek.");
+                    notificationShown = true; // Az értesítést csak egyszer jelenítjük meg
+                }
+                clickedCells = 0; // Reseteljük a kattintott cellák számát
+                generateBingoBoard();
+            });
+
+            closeButton.addEventListener("click", () => {
+                bingoOverlay.style.display = "none";
+            });
+
+            function generateBingoBoard() {
+                bingoBoard.innerHTML = "";
+                let shuffledPhrases = phrases.sort(() => 0.5 - Math.random()).slice(0, 25);
+                let clickedCells = 0;
+
+                for (let i = 0; i < 5; i++) {
+                    const row = document.createElement("tr");
+                    for (let j = 0; j < 5; j++) {
+                        const cell = document.createElement("td");
+                        if (i === 2 && j === 2) {
+                            const img = document.createElement("img");
+                            img.src = "Bingo.png";
+                            img.alt = "Bingo";
+                            cell.appendChild(img);
+                            cell.classList.add("no-click");
+                        } else {
+                            cell.textContent = shuffledPhrases[i * 5 + j];
+                            cell.addEventListener("click", () => {
+                                if (!cell.classList.contains("clicked")) {
+                                    cell.classList.add("clicked");
+                                    clickedCells++;
+                                    if (clickedCells === 24) {
+                                        bingoOverlay.style.display = "none"; // Az új ID-t használjuk
+                                        newQuotes.style.display = "block";
+                                    }
+                                }
+                            });
+                        }
+                        row.appendChild(cell);
+                    }
+                    bingoBoard.appendChild(row);
+                }
+            }
+        });
+
         const icons = document.querySelectorAll('.icon');
         const popup = document.getElementById('popup');
         const overlay = document.getElementById('overlay');
