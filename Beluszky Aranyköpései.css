@@ -248,3 +248,92 @@ button {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 999;
 }
+
+.bingo-overlay { /* Új overlay osztály */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+}
+
+.bingo-board {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.bingo-board table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.bingo-board td {
+    width: 55px;
+    height: 55px;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bingo-board td img {
+    max-width: 40px;
+}
+
+.bingo-board td.clicked {
+    background-color: #ffc300;
+}
+
+.bingo-board td.no-click {
+    background-color: white;
+    pointer-events: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+img.icon {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+.new-quotes {
+    display: none;
+    background-color: white;
+    color: black;
+}
+
+.new-quotes li {
+    margin-bottom: 10px;
+}
+
+.bingo-nyeremény {
+    max-width: 30px;
+}
+
+.rerollButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffc300;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
