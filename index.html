@@ -51,10 +51,10 @@
 
     <div class="coupon2" style="background-color: #ffc300 ; color: #000;">
         <div class="coupon-text2">
-            <h2>Jobb, mint az idősotthonban. Bingóóóó!</h2>
-            <p>Szórakozz egy jót Beluszkyval, figyelj és fülelj, töltsd ki a bingólapot és nézd meg legújabb Aranyköpéseinket! Igérjük nagyon frissek, ropogósak az új Aranyköpések, úgyhogy húzz bele, ne maradj le! Kattints a Bingo ikonra a szöveg mellett.</p>
+            <h2>"Hallgassuk csak meg!"</h2>
+            <p>1 hétig minden nap a kedvencünk megy a rádiónkba. Hallgasd meg mit mond Beluszky, válaszd ki a kapcsolódó Aranyköpést, és nyerd meg legújabb, legfrissebb, legropogósabb, legmelegebb Aranyköpéseinket!</p>
         </div>
-        <span class="bingo"><img src="Bingo.png" alt="Kép" class="coupon-image2" id="bingoButton" class="icon"></span>
+        <span class="bingo"><img src="Hang.png" alt="Kép" class="coupon-image2" id="voiceNoteButton" class="icon"></span>
         <style>
             .coupon-image2 {
             background-color: #000;
@@ -69,62 +69,90 @@
 
     <h2>Eddig összegyűjtött köpéseink:</h2>    
     </div>
+    <div id="nyeremeny_doboz" class="nyeremeny">
+        <ul>
+            <li class="uj_szoveg">
+                <p id="nyeremeny"></p>
+                <img src="Hang_logo.png" alt="Nyeremény idézet" class="uj">
+                <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+                <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+            </li>
+        </ul>
+    </div>
     <ul class="list">
-        <li class="uj_szoveg">Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <!--
+            Maguk szeparatisták vagy kommunisták?
+            Igen, abszolút ismerem, abszolút megbízható. Amit mond, az úgy is van, csak a tudásának ellenére néha kicsit lustácska.
+            Noh hát, ugyanakkor Tisza Kálmánról is kellene beszélni.
+            De hogy ezek hogyan lehetnek ilyen nagyok és hatalmúak is, azt sosem értettem igazán.
+            Tisza Kálmán kormánya. ... Tehát ő lett az ellenzéki vezető.
+            Feltehetően Tisza István volt a vezetőjük és megalapították a Nemzeti Szabadlelkűe..., jahj bocsánat, SzabadELVŰek pártját.
+            Horváth Anna... Csillagos ötös!
+            Pólya Pa, Pólya, Pósa Patrik is kéri.
+            Alapvetően nem volt egy aljas valaki, így hát feltehetően valóban a vízbe fulladt, szerencsére.
+            Hát akkor rögtön kiálts be, shau an. Nein nein!!
+            De nem biztos, hogy ő a gyilkos, csak életében embert ölt.
+            Ne, ne totózgass. Ide figyelj!
+            A közösségi demokrácia nem feltétlenül igazságos.
+            Bogács István Dániel
+            Itt van valami videófilm, amit jó lenne megnézni!
+            Nah, katonai tömörséggel utasítgatok, de hát muszáj.
+            Én ezt meg tudom érteni, nekem is rövid volt.
+            Megnézünk egy 21 perces elég jó kompjúteranimációt!
+            Engem már az általánosban sem a szép kézírásomért szerettek.
+            Én nem csinálok a számból az emésztőcsatorna ellenkező kimenetét!
+        -->
+        <li>Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Nem elesett, hanem megölték
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Nem elesett, hanem megölték
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
-        <li class="uj_szoveg">Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír
-            <img src="Új.png" alt="Új idézet" class="uj">
+        <li>Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
         </li>
+        <!--
+            <li class="uj_szoveg">Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír
+                <img src="Új.png" alt="Új idézet" class="uj">
+                <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
+                <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
+            </li>
+        -->
         <li>Hát ez egyenlőre nagyon mini.
             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
@@ -284,19 +312,77 @@
         <p>Beluszky Aranyköpései ©</p>
         <p class="cc-p" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a class="cc-p" property="dct:title" rel="cc:attributionURL" href="https://beluszky-aranykopesei.vercel.app/">Beluszky Aranyköpései</a> by <span class="cc-p" property="cc:attributionName">Beluszky</span> licenc alatt van <a class="cc-p" href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" >CC BY-SA 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="creativecommons" alt="Creative Commons"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="creativecommons" alt="Attribution"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="creativecommons" alt="ShareAlike"></a></p>
         <p>Legutolsó módosítás dátuma: <span id="last-modified"></span></p>
-        <p onclick="version">Verziószám: v.02.12</p>
-        <div id="version-info"></div>
-        <a href="Beluszky-bingo.zip" download="Beluszky-bingo.zip" class="letoltes">Folytatnád a megfigyelést? BingÓ!</a>
+        <p onclick="version">Verziószám: v.02.20</p>
     </footer>
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup"></div>
     <div id="overlay-event"></div>
     <div id="message-box">
-        <p>Köszönjük, hogy velünk tartottál! Sajnos a Bingo véget ért. Köszönjük minden lelkes, szemfüles Beluszky Aranyköpései fannak. De ne csüggedjetek, hamarosan érkezünk a következő nagy dobásunkkal. - Az eddig csak a Bingo-ból megtekinthető Aranyköpések most már mindenki számára elérhetőek. Illetve Bingo táblákat tölthettek le a lap alján, ha folytatnátok a fülelést!</p>
+        <audio id="audio-player" controls autoplay></audio>
+        <h2 id="question">Melyik Beluszky Aranyköpés illik a legjobban ide?</h2>
+        <div id="answers">
+            <p class="answer" style="cursor: pointer;" onclick="checkAnswer(0)"></p>
+            <p class="answer" style="cursor: pointer;" onclick="checkAnswer(1)"></p>
+            <p class="answer" style="cursor: pointer;" onclick="checkAnswer(2)"></p>
+        </div>
+        <h3 id="result-message" class="hidden"></h3>
     </div>
     <script>
-        document.getElementById("bingoButton").addEventListener("click", function() {
+        // Napi adatok: Hangfájlok, kérdések és válaszok
+        const quizData = [
+            { audio: "Egyszer.mp3", answers: ["Megkérdőjelezem, hogy most mi a munkám értelme?", "Csavarom, csavarom, de hiába.", "Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni."], correct: 1, nyeremeny: "Nah, katonai tömörséggel utasítgatok, de hát muszáj."},
+            { audio: "Plattyogva.mp3", answers: ["Kicsike, mozgékony, de nehezen elsüllyeszthető.", "Manufaktúra - Közép újkori közép ember", "Meglepő, szarkasztikus és humoros"], correct: 0, nyeremeny: "Pólya Pa, Pólya, Pósa Patrik is kéri."},
+            { audio: "Ez_is_elég_morbid.mp3", answers: ["Ti is -hozzátenném jogosan- meg lennétek megsértődve, ha miközben beszéltek hozzám én fülhallgatóként, öhm illetve, fülhallgatóval Bizsit hallgatnék.", "Nem elesett, hanem megölték", "A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de..."], correct: 1, nyeremeny: "De nem biztos, hogy ő a gyilkos, csak életében embert ölt."},
+            { audio: "Ésssööö_kövér.mp3", answers: ["Bár én nem vagyok egy analfabéta, jobbágy paraszt.", "A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de...", "Aaa... mondjad már, könyörgök! Adók! Köszönöm!"], correct: 1, nyeremeny: "De hogy ezek hogyan lehetnek ilyen nagyok és hatalmúak is, azt sosem értettem igazán."},
+            { audio: "Spoiler.mp3", answers: ["Nem film, csak egy kicsit nagyobb képillusztráció", "Az oroszok annyian vannak, mint az oroszok.", "Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha."], correct: 0, nyeremeny: "Megnézünk egy 21 perces elég jó kompjúteranimációt!"},
+            { audio: "Szeeeegény Beluszkyyyyy.mp3", answers: ["Halihó! Figyelem! Szűnjön meg a sus, maradjon a kuss!", "Megkérdőjelezem, hogy most mi a munkám értelme?", "Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak."], correct: 1, nyeremeny: "Én nem csinálok a számból az emésztőcsatorna ellenkező kimenetét!"},
+            { audio: "Minden_relatív.mp3", answers: ["Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.", "Meglepő, szarkasztikus és humoros", "Hát ez egyenlőre nagyon mini."], correct: 2, nyeremeny: "Én ezt meg tudom érteni, nekem is rövid volt."},
+            { audio: "Noh_igeeeeen_De.mp3", answers: ["Színvonaltalan, gyerekes, elszomorító", "Ez kihozza belőlem a vadállatot!", "Noh!"], correct: 2, nyeremeny: "Feltehetően Tisza István volt a vezetőjük és megalapították a Nemzeti Szabadlelkűe..., jahj bocsánat, SzabadELVŰek pártját."},
+        ];
+
+        // Aktuális nap kiválasztása (0–9 között)
+        const todayIndex = new Date().getDate() % quizData.length;
+        const todayQuiz = quizData[todayIndex - 5];
+        const resultMessage = document.getElementById("result-message");
+        const answersContainer = document.getElementById("answers");
+        const nyeremenyContainer = document.getElementById("nyeremeny");
+        const nyeremeny_dobozContainer = document.getElementById("nyeremeny_doboz");
+
+        // Adatok megjelenítése
+        if (todayIndex !== undefined && todayQuiz) {
+            document.getElementById("audio-player").src = todayQuiz.audio;
+
+            const buttons = document.querySelectorAll(".answer");
+            buttons.forEach((btn, index) => {
+                btn.innerText = todayQuiz.answers[index];
+            });
+        } else {
+            if (todayIndex > 20) {
+                document.getElementById("question").innerText = "Köszönjük, hogy velünk hallgatóztál! Egyenlőre vége, de ígérjük hamarosan újra találkozunk!";
+            }
+            else {
+                document.getElementById("question").innerText = "Hamarosan érkezünk a legújabb nagy dobásunkkal! Térj vissza Pénteken és hallgatózz te is!";
+            }
+            document.getElementById("audio-player").classList.add("hidden");
+        }
+
+        // Válasz ellenőrzése
+            function checkAnswer(index) {
+            if (index === todayQuiz.correct) {
+                answersContainer.classList.add("hidden"); // Gombok elrejtése
+                resultMessage.innerText = "Helyes válasz, Nézd meg a nyeremény Aranyköpésed! Térj vissza holnap a következő hallgatózásért!";
+                nyeremenyContainer.innerText = todayQuiz.nyeremeny;
+                nyeremeny_dobozContainer.classList.remove("nyeremeny")
+            } else {
+                resultMessage.innerText = "Helytelen, próbálkozz újra.";
+            }
+            }
+            resultMessage.classList.remove("hidden"); // Üzenet megjelenítése
+            resultMessage.classList.add("uj_szoveg");
+        //...............................................................................................................................
+
+        document.getElementById("voiceNoteButton").addEventListener("click", function() {
             document.getElementById("overlay-event").style.display = "block";
             document.getElementById("message-box").style.display = "block";
 
