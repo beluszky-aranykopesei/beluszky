@@ -343,7 +343,7 @@
 
         // Aktuális nap kiválasztása (0–9 között)
         const todayIndex = new Date().getDate() % quizData.length;
-        const todayQuiz = quizData[todayIndex - 5];
+        const todayQuiz = quizData[todayIndex];
         const resultMessage = document.getElementById("result-message");
         const answersContainer = document.getElementById("answers");
         const nyeremenyContainer = document.getElementById("nyeremeny");
