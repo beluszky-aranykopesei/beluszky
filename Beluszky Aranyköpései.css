@@ -309,3 +309,34 @@ a {
 .nyeremeny {
     display: none;
 }
+
+.uzenet {
+    background-color: #ffc300;
+    align-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    height: 25px;
+    display: flex;
+    gap: 10px;
+}
+
+.uzenet p {
+    padding-bottom: auto;
+    padding-top: auto;
+    margin-top: 3px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tovabb {
+    margin-left: auto;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.leall {
+    margin-left: 20px;
+}
