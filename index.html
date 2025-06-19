@@ -472,6 +472,7 @@
             currentIndex = index;
             document.getElementById("audio-player").src = quiz.audio;
             document.getElementById("audio-player").play();
+            document.getElementById("audio-player").classList.remove("hidden");
             document.getElementById("question").innerText = "Melyik Aranyköpés illik a legjobban ide?";
 
             const buttons = document.querySelectorAll(".answer");
