@@ -26,3 +26,42 @@ video {
     color: white;
     text-align: center;
 }
+
+.popup-container {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 75%;
+    max-height: 75vh; /* Maximális magasság: 70% a képernyőből */
+    overflow-y: auto; /* Görgethetővé teszi a hosszú tartalmat */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+    border-radius: 10px;
+}
+
+.popup-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-container li {
+    padding: 5px 0;
+}
+
+.close-btn {
+    margin-top: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+#open {
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
