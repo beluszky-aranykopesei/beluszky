@@ -400,13 +400,6 @@
         document.getElementById("overlay-event").addEventListener("click", function() {
             document.getElementById("message-box").classList.remove("show");
 
-            // Kis késleltetéssel eltüntetjük az elemeket
-            setTimeout(() => {
-                document.getElementById("overlay-event").style.display = "none";
-                document.getElementById("message-box").style.display = "none";
-            }, 400);
-        });
-
         const icons = document.querySelectorAll('.icon');
         const popup = document.getElementById('popup');
         const overlay = document.getElementById('overlay');
