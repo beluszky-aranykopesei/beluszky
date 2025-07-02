@@ -352,18 +352,8 @@ a {
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
-    height: 75px;
     display: flex;
     gap: 10px;
-}
-
-.uzenet p {
-    padding-bottom: auto;
-    padding-top: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .tovabb {
@@ -373,7 +363,9 @@ a {
 }
 
 .leall {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .legfrissebb {
