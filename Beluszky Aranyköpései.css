@@ -443,7 +443,7 @@ a {
     font-weight: bold;
 }
 
-.Beluszky-icon img {
+.Beluszky-icon{
     max-width: 20px;
     cursor: pointer;
 }
