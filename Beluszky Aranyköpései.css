@@ -381,6 +381,11 @@ a {
     cursor: pointer;
 }
 
+.legfrissebb p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .legfrissebb-bal {
     margin-left: 20px;
     margin-right: auto;
