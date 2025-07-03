@@ -381,23 +381,18 @@ a {
     cursor: pointer;
 }
 
-.legfrissebb p {
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .legfrissebb-bal {
     margin-left: 20px;
     margin-right: auto;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .legfrissebb-jobb {
     margin-left: auto;
     margin-right: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .hirportal {
