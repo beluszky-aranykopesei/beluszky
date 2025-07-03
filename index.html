@@ -4,686 +4,180 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beluszky Aranyköpései</title>
-    <link rel="stylesheet" href="Beluszky Aranyköpései.css">
-    <link rel="icon" href="Mini Beluszky.png" type="image/x-icon">
-    <link rel="shortcut icon" href="Mini Beluszky.png" type="image/x-icon">
+    <link rel="stylesheet" href="Karbantartás.css">
 </head>
 <body>
-    <header>
-        <div class="header-container">
-            <h1 class="logo">Beluszky Aranyköpései</h1>
-            <img src="Menu.png" alt="Menu" class="menu-button" onclick="toggleMenu()">
-            <div class="menu" id="menu">
-                <a href="https://beluszky-aranykopesei.vercel.app/">Aranyköpések</a>
-                <a href="https://tal-ria-ver-zia-elm-let.vercel.app/">A Nagy Elmélet</a>
-            </div>
-        </div>
-        <div class="uzenet">
-            <p class="leall"><b>Leállás</b> - 07. 03.-án, csütörtökön az oldal nagyjából 22:00 és 23:00 között hosszabb ideig leáll. Köszönjük a türelmed!</p>
-        </div>
-    </header>
-
-    <div id="legfrissebb" class="legfrissebb">
-        <p class="legfrissebb-bal">Tekintsd meg a legfrissebb újításainkat!</p>
-        <p class="legfrissebb-jobb">Tovább a hírportálra!</p>
+    <div class="video-container">
+        <video autoplay muted playsinline>
+            <source src="Karbantartás.mp4" type="video/mp4">
+            Az Ön böngészője nem támogatja a videó lejátszását.
+        </video>
+        <p class="message">Az aranyköpéseket is kell frissíteni.  A karbantartás során kijavítjuk hibáinkat! Igérjük nem tart sokáig. Addig is...</p>
+        <span id="open" class="message">Tekintsd meg az Aranyköpéseink listáját!</span>
     </div>
-
-    <div class="coupon" style="background: url(Beluszky-nyaral-hattér.png);">
-        <img src="Beluszky-nyaral.png" alt="Kép" class="coupon-image">
-        <div class="coupon-text">
-            <h2>Egyszer minden véget ér, de néha csak egy kis időre megyünk el.</h2>
-            <p>Néha le kell állni, egy kis kikapcsolódásra van szüksége mindenkinek. Adunk egy kis időt az egyetlen, csodálatos Legendának is! Ki tudja lehet pár hónap múlva egy hatalmas visszatéréssel köszönt minket. Ki tudja? - Addig is olvasd el a szerkesztők évzáró gondolatait a hírportálon!</p>
-        </div>
+    <div class="popup-container" id="popup">
+        <span class="close-btn" onclick="closePopup()">Bezárás</span>
+        <h2>Aranyköpések:</h2>
+        <ul>
+            <!----------------------------------------------------------------------------------------------------------------------------------->
+            <li>Színvonaltalan, gyerekes, elszomorító</li>
+            <li>Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.</li>
+            <li>Megkérdőjelezem, hogy most mi a munkám értelme?</li>
+            <li>Ha mégegyszer meg látom a kezét, hogy lendít!</li>
+            <li>Szolíd, tudatos, tisztelettudó, csak a Kristóf!</li>
+            <li>Halihó!</li>
+            <li>Belátással, inteligenciával kéne viselkedni.</li>
+            <li>Noh!</li>
+            <li>Engem nem érdekel ki, csak az, hogy ne legyen.</li>
+            <li>Meglepő, szarkasztikus és humoros</li>
+            <li>Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.</li>
+            <li>Elfogadom a helyzeted, csak egyáltalán nem érdekel.</li>
+            <li>Bár én nem vagyok egy analfabéta, jobbágy paraszt.</li>
+            <li>Ti is -hozzátenném jogosan- meg lennétek megsértődve, ha miközben beszéltek hozzám én fülhallgatóként, öhm illetve, fülhallgatóval Bizsit hallgatnék.</li>
+            <li>Ez kihozza belőlem a vadállatot!</li>
+            <li>A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de...</li>
+            <li>Hát én mindjárt dobok egy hátast, ilyen fiatalosan fogalmazva.</li>
+            <li>Manufaktúra - Közép újkori közép ember</li>
+            <li>Öhm... Bocsáss meg, kicsoda? Oh, Tímea, hát igen ő mindig nagyon segítőkész és egy igazán kommunikatív egyéniség.</li>
+            <li>Halihó! Figyelem! Szűnjön meg a sus, maradjon a kuss!</li>
+            <li>Ez aztán igazán közösségellenes, antikollegiális magatartás.</li>
+            <li>Igen, igen most beszéltem Vida Lacival.</li>
+            <li>Rendben, megkaptad a négyesed, de attól még fordulj előre!</li>
+            <li>Nem, ennyi lehet. Ez se olyan kicsi.</li>
+            <li>Csavarom, csavarom, de hiába.</li>
+            <li>Ott van Ulrich Zwingly, magyarul Zwingly Ulrich</li>
+            <li>Csöndet kérünk (Továbbra is egyedül van), halihó!</li>
+            <li>Nem film, csak egy kicsit nagyobb képillusztráció</li>
+            <li>A kőrözési listán, a kőrözött személy...</li>
+            <li>És valójában ők hozták létre a mai Nyű Jorkot.</li>
+            <li>Kicsike, mozgékony, de nehezen elsüllyeszthető.</li>
+            <li>Az oroszok annyian vannak, mint az oroszok.</li>
+            <li>Aaa... mondjad már, könyörgök! Adók! Köszönöm!</li>
+            <li>Jah, hétfőn, bocsánat szamár vagyok.</li>
+            <li>Nyilván ennek megvan a saját csínyja, bínyja.</li>
+            <li>Aha, itt lehet nagyítani!</li>
+            <li>Hát ez egyenlőre nagyon mini.</li>
+            <li>Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír</li>
+            <li>Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos</li>
+            <li>Nem elesett, hanem megölték</li>
+            <li>Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.</li>
+            <li>Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.</li>
+            <li>Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...</li>
+            <li>Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.</li>
+            <li>Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.</li>
+            <li>A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.</li>
+            <li>Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.</li>
+            <li>Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.</li>
+            <li>HÚÚ, micsoda gőzfürdő lett itt.</li>
+            <li>Most már itt ezt kiveszem</li>
+            <li>Városaik belseje eléggé városias volt.</li>
+            <li>Ez se kevés, de nem olyan sok!</li>
+            <li>És sikerült átnavigálni az ország halálán... öhmmm, hajóján.</li>
+            <li>Elfogadta a koronát, de csak mint személyes ajándékot!</li>
+            <li>És nálam nyomorultabb király egész Európában nem lett volna.</li>
+            <li>Mit készít elő egy fél óráig?</li>
+            <li>Ja igen az iszkép helyett a főkapcsolót nyomtam meg.</li>
+            <li>Linkóci, mint az éjszaka.</li>
+            <li>Jajó okésss</li>
+            <li>Nem évközi, szamár vagyok aaaa</li>
+            <li>Vissza, visszaaaa...</li>
+            <li>Aztat mondanám, </li>
+            <li>Sokszor kicsit inkorrekt!</li>
+            <li>Főszereplő!</li>
+            <li>Tehát amikor a rendőr és a bűnöző oly régóta szórakoznak egymással, hogy már szinte barátok</li>
+            <li>Tökéletlenség és a bizonytalanság</li>
+            <li>Én nem csinálok a számból az emésztőcsatorna ellenkező kimenetét!</li>
+            <li>Engem már az általánosban sem a szép kézírásomért szerettek.</li>
+            <li>Megnézünk egy 21 perces elég jó kompjúteranimációt!</li>
+            <li>Én ezt meg tudom érteni, nekem is rövid volt.</li>
+            <li>Nah, katonai tömörséggel utasítgatok, de hát muszáj.</li>
+            <li>Itt van valami videófilm, amit jó lenne megnézni!</li>
+            <li>Bogács István Dániel</li>
+            <li>A közösségi demokrácia nem feltétlenül igazságos.</li>
+            <li>Ne, ne totózgass. Ide figyelj!</li>
+            <li>De nem biztos, hogy ő a gyilkos, csak életében embert ölt.</li>
+            <li>Hát akkor rögtön kiálts be, shau an. Nein nein!!</li>
+            <li>Alapvetően nem volt egy aljas valaki, így hát feltehetően valóban a vízbe fulladt, szerencsére.</li>
+            <li>Pólya Pa, Pólya, Pósa Patrik is kéri.</li>
+            <li>Horváth Anna... Csillagos ötös!</li>
+            <li>Feltehetően Tisza István volt a vezetőjük és megalapították a Nemzeti Szabadlelkűe..., jahj bocsánat, SzabadELVŰek pártját.</li>
+            <li>Tisza Kálmán kormánya. ... Tehát ő lett az ellenzéki vezető.</li>
+            <li>De hogy ezek hogyan lehetnek ilyen nagyok és hatalmúak is, azt sosem értettem igazán.</li>
+            <li>Noh hát, ugyanakkor Tisza Kálmánról is kellene beszélni.</li>
+            <li>Igen, abszolút ismerem, abszolút megbízható. Amit mond, az úgy is van, csak a tudásának ellenére néha kicsit lustácska.</li>
+            <li>Maguk szeparatisták vagy kommunisták?</li>
+            <!--48 Aranyköpés-->
+        </ul>
+        <h2>Taléria Verézia Elméletek:</h2>
+        <ul>
+            <li>
+                <p><b>"Jajj, már hülyeséget beszélek. Látszik már nem vagyok itt fejben. Máshol jár az agyam."</b> </p>
+                <p>Tanárnő kicsit elkalandozott a mocskos, lucskos fantáziájában.</p>
+            </li>
+            <li>
+                <p><b>"Már másfél oldalt írtunk?!"</b> </p>
+                <p>Drága tanárnő nem tudom mit lepődik meg, 1 nap 2 oldalt írunk és 10 perc maradt hátra.</p>
+            </li>
+            <li>
+                <p><b>"Hatalmas méretűek."</b> </p>
+                <p>Tanárnő minden péntek este.</p>
+            </li>
+            <li>
+                <p><b>"És látják? Azonnal beindulnak, amikor azok bejönnek."</b> </p>
+                <p>A péntek esték elmesélése.</p>
+            </li>
+            <li>
+                <p><b>"Tehát, hogy kicsit elrettentés képpen, hogy mennyi van itt."</b> </p>
+                <p>Geci sok cigány van Erzsébeten, csak mondom önöknek. Jobb ha félnek!</p>
+            </li>
+            <li>
+                <p><b>"Tehát belénkjut, mondhatnák."</b> </p>
+                <p>Oh ez az tedd be! Ez az még, még tedd be!</p>
+            </li>
+            <li>
+                <p><b>"Láttam, hogy maga ott a pad alatt fogdosta, majd berakta."</b> </p>
+                <p>Ne tessék recskázni az én órámon!</p>
+            </li>
+            <li>
+                <p><b>"Nem fogom részletesen kérni"</b> </p>
+                <p>Nyugodjanak meg csupán 10 egész feladat erről fog szólni a témazáróban, amit az nkp felületén írnak majd.</p>
+            </li>
+            <li>
+                <p><b>"Ez ugye lehet hígabb és sűrűbb is, de akkor is egy folyadék."</b> </p>
+                <p>Drága tanárnő gondolatai a hormonrendszer szabályozása közben</p>
+            </li>
+            <li>
+                <p><b>"Semmi sem lehet olyan jó, amit belénk tesznek."</b> </p>
+                <p>Hát ez nem túl nagy, az az igazság.</p>
+            </li>
+            <li>
+                <p><b>"Egyszer mindent ki kell próbálni, mint tudják."</b> </p>
+                <p>Seggből szájba, szájból seggbe.</p>
+            </li>
+            <li>
+                <p><b>"Na, azért a tanulás mellett kell egy kis szabadidő is."</b> </p>
+                <p>Tök mindegy, hogy kell szabadidő is, az egyest bevágom neked, minden esetben.</p>
+            </li>
+            <li>
+                <p><b>"Ejej Kristóf, sajnálom azokat a szép tavalyi jegyeket."</b> </p>
+                <p>Akkor baszódj meg hülye fasz, hogy nem tanulsz többet.</p>
+            </li>
+            <li>
+                <p><b>"A magánéletemben az időmet a a családommal és a barátaimmal töltöm."</b> </p>
+                <p>Am minden nap bebaszunk a csajokkal, mint a Pesti egyetemista plázacicák</p>
+            </li>
+        </ul>
+        <!--14 Elmélet-->
     </div>
-
-    <div class="coupon">
-        <img src="Aranyköpés.jpg" alt="Kép" class="coupon-image">
-        <div class="coupon-text">
-            <h2>A hatalmas köpés, méghozzá aranyból</h2>
-            <p>Bár itt aranyköpéseket írunk le, megnyugodhat nem lesz nedves. Elméletileg. Ugyanakkor ajánjuk a papírzsebkendő kézhez ragadását, hisz örömkönnyekben gazdag időtöltés lesz, ezt garantáljuk!</p>
-        </div>
-    </div>
-
-    <div class="coupon2">
-        <div class="coupon-text2">
-            <h2>Köszönetnyílvántás</h2>
-            <p>Egy biztos: Nem minden hős visel köpenyt! Köszönjük a Legendának, aki legjobb gondolataival és eszével színesíti társadalmunkat, és persze mindennapjainkat! A legnagyobb, a csodálatos, a jószívű, az egyetlen, örökkké (szigorúan 3 k-val)!</p>
-        </div>
-        <img src="Beluszky.jpg" alt="Kép" class="coupon-image2">
-    </div>
-
-    <div class="coupon">
-        <img src="Új.png" alt="Kép" class="coupon-image">
-        <style>
-            .coupon-image {
-                background-color: #000;
-            }
-        </style>
-        <div class="coupon-text">
-            <h2>Van, ami változik. Van, aki nem.</h2>
-            <p>Ez a tárház például folyamatosan frissül, a legaktuálisabb aranyköpésekkel. De a Legenda sosem változik, ő örökkké (továbbra is 3 k-val) eláraszt minket bölcsebbnél bölcsebb idézetekkel, melyek az élet minden témakörét lefedik.</p>
-        </div>
-    </div>
-
-    <div class="quote-container">
-        <p class="napi"><b>A mai nap aranyköpése:</b></p>
-        <div class="quote" id="daily-quote"></div>
-    </div>
-
-    <h2>Eddig összegyűjtött köpéseink:</h2>
-    <ul class="list">
-        <li class="uj_szoveg">HÚÚ, micsoda gőzfürdő lett itt.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Most már itt ezt kiveszem
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Városaik belseje eléggé városias volt.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Ez se kevés, de nem olyan sok!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">És sikerült átnavigálni az ország halálán... öhmmm, hajóján.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Elfogadta a koronát, de csak mint személyes ajándékot!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">És nálam nyomorultabb király egész Európában nem lett volna.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Mit készít elő egy fél óráig?
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Ja igen az iszkép helyett a főkapcsolót nyomtam meg.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Linkóci, mint az éjszaka.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Jajó okésss
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Nem évközi, szamár vagyok aaaa
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Vissza, visszaaaa...
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Aztat mondanám, 
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Sokszor kicsit inkorrekt!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Főszereplő!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Tehát amikor a rendőr és a bűnöző oly régóta szórakoznak egymással, hogy már szinte barátok
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Tökéletlenség és a bizonytalanság
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Én nem csinálok a számból az emésztőcsatorna ellenkező kimenetét!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Engem már az általánosban sem a szép kézírásomért szerettek.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Megnézünk egy 21 perces elég jó kompjúteranimációt!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Én ezt meg tudom érteni, nekem is rövid volt.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Nah, katonai tömörséggel utasítgatok, de hát muszáj.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Itt van valami videófilm, amit jó lenne megnézni!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Bogács István Dániel
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">A közösségi demokrácia nem feltétlenül igazságos.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Ne, ne totózgass. Ide figyelj!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">De nem biztos, hogy ő a gyilkos, csak életében embert ölt.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Hát akkor rögtön kiálts be, shau an. Nein nein!!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Alapvetően nem volt egy aljas valaki, így hát feltehetően valóban a vízbe fulladt, szerencsére.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Pólya Pa, Pólya, Pósa Patrik is kéri.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Horváth Anna... Csillagos ötös!
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Feltehetően Tisza István volt a vezetőjük és megalapították a Nemzeti Szabadlelkűe..., jahj bocsánat, SzabadELVŰek pártját.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Tisza Kálmán kormánya. ... Tehát ő lett az ellenzéki vezető.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">De hogy ezek hogyan lehetnek ilyen nagyok és hatalmúak is, azt sosem értettem igazán.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Noh hát, ugyanakkor Tisza Kálmánról is kellene beszélni.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Igen, abszolút ismerem, abszolút megbízható. Amit mond, az úgy is van, csak a tudásának ellenére néha kicsit lustácska.
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="uj_szoveg">Maguk szeparatisták vagy kommunisták?
-            <img src="Új.png" alt="Nyeremény idézet" class="uj">
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Nem elesett, hanem megölték
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Hát ez egyenlőre nagyon mini.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Aha, itt lehet nagyítani!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Nyilván ennek megvan a saját csínyja, bínyja.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Jah, hétfőn, bocsánat szamár vagyok.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Aaa... mondjad már, könyörgök! Adók! Köszönöm!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Az oroszok annyian vannak, mint az oroszok.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Kicsike, mozgékony, de nehezen elsüllyeszthető.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>És valójában ők hozták létre a mai Nyű Jorkot.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>A körözési listán, a kőrözött személy...
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Én legalább nem vagyok olyan monoton, mint a tegnapi előadóm.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Nem film, csak egy kicsit nagyobb képillusztráció
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Csöndet kérünk (Továbbra is egyedül van), halihó!
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Ott van Ulrich Zwingly, magyarul Zwingly Ulrich
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Csavarom, csavarom, de hiába.
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Nem, ennyi lehet. Ez se olyan kicsi.
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Rendben, megkaptad a négyesed, de attól még fordulj előre!
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Igen, igen most beszéltem Vida Lacival.
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Ez aztán igazán közösségellenes, antikollegiális magatartás.
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-         <li>Halihó! Figyelem! Szűnjön meg a sus, maradjon a kuss!
-             <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-             <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-         </li>
-        <li>Öhm... Bocsáss meg, kicsoda? Oh, Tímea, hát igen ő mindig nagyon segítőkész és egy igazán kommunikatív egyéniség.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Manufaktúra - Közép újkori közép ember
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Hát én mindjárt dobok egy hátast, ilyen fiatalosan fogalmazva.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de...
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Bár én nem vagyok egy analfabéta, jobbágy paraszt.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Ti is -hozzátenném jogosan- meg lennétek megsértődve, ha miközben beszéltek hozzám én fülhallgatóként, öhm illetve, fülhallgatóval Bizsit hallgatnék.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Ez kihozza belőlem a vadállatot!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Színvonaltalan, gyerekes, elszomorító
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Megkérdőjelezem, hogy most mi a munkám értelme?
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Ha mégegyszer meg látom a kezét, hogy lendít!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Szolíd, tudatos, tisztelettudó, csak a Kristóf!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Halihó!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Belátással, inteligenciával kéne viselkedni.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Noh!
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Engem nem érdekel ki, csak az, hogy ne legyen.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Meglepő, szarkasztikus és humoros
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li>Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-        <li class="utolsó">Elfogadom a helyzeted, csak egyáltalán nem érdekel.
-            <img src="Másolás.png" alt="Másolás ikon" class="copy-icon" onclick="copyToClipboard(this)">
-            <span class="icon"><img src="Szem.png" alt="Szem ikon"></span>
-        </li>
-    </ul>
-
-    <footer>
-        <p>Deployed on Vercel</p>
-        <p>Beluszky Aranyköpései ©</p>
-        <p class="cc-p" xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a class="cc-p" property="dct:title" rel="cc:attributionURL" href="https://beluszky-aranykopesei.vercel.app/">Beluszky Aranyköpései</a> by <span class="cc-p" property="cc:attributionName">Beluszky</span> licenc alatt van <a class="cc-p" href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;" >CC BY-SA 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" class="creativecommons" alt="Creative Commons"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" class="creativecommons" alt="Attribution"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" class="creativecommons" alt="ShareAlike"></a></p>
-        <p>Legutolsó módosítás dátuma: <span id="last-modified"></span></p>
-        <p onclick="version">Verziószám: v.02.30</p>
-    </footer>
-
-    <div class="overlay" id="overlay"></div>
-    <div class="popup" id="popup"></div>
-    <div id="overlay-event"></div>
-    <div id="message-box">
-        <h2 id="question">A Beluszky Hallgatózásnak sajnos vége. De ígérjük nem sokára újra találkozunk!</h2>    
-    </div>
-    <div id="hirlap-hatter" class="hirlap-hatter hidden" onclick="closeHirportal()"></div>
-    <section id="hirportal" class="hirportal hidden">
-        <h2>Legfrissebb híreink</h2>
-        <!--
-        <div class="hirkartya">
-            <h3>[Cím]</h3>
-            <p>[Dátum]</p>
-            <p>[Tartalom]</p>
-        </div>
-        -->
-        <div class="hirkartya">
-            <h3>Évzáró beszéd</h3>
-            <p>2025. 06. 30., Hétfő</p>
-            <p>Egyszer sajnos minden véget ér!</p>
-            <p>De ne kezdjük rögtön egy ilyen depresszív gondolattal. Nézzük meg mit értünk 2025. december. 20. óta! Rengetegen nézitek meg a weboldalainkat heti szinten is, ami hatalmas nagy önbizalmat ad és sokszor hatalmas motiváció az egész csapat számára! Voltak nehéz feladatok, megvalósíthatatlannak tűnő álmok. De közösen majdnem minden összejött. Köszönjük nektek, hogy immáron a 2. közös esemény, a Beluszky Hallgatózás ekkora figyelmet kapott. Hihetetlen, hogy mennyire lelkes a közönség és ez természetesen hatalmas öröm, hisz ez az egész nélkületek nem jött volna össze, és az biztos, hogy nem tartana itt. Szóval köszönjük a hatalmas figyelmet!</p>
-            <p><b>Beluszky Aranyköpései</b> - Immáron összegyűjtöttünk 87 Aranyköpést. Hihetetlen a Legenda, hihetetlen a közönség és hihetetlen ez az egész csapat, akik valljuk be egy egész közösséget tartanak össze. Megfogadtuk, hogy mi mindig a szórakoztatás élén fogunk állni és sikerült betartani ígéretünket. A szünetünk után is természetesen hatalmas összetartással fogadunk mindenkit, legyen szó újonnan jött Beluszky fanról vagy már igazi Beluszky Veteránokról. Ígérjük jövőre is megszínesítjük a mindennapokat!</p>
-            <p><b>A Taléria Verézia elmélet</b> - Az egyetlen elméletes zsebkönyvünk. Legyen szó a tanulás izgalmairól, a szexuális felvilágosításról, a szabadidő fontosságáról, vagy csak a mindennapi dolgainkról, Talériának mindhez van egy-egy elmélete. Mi pedig közösen megfejtjük őket, hogy mindenkinek érthető legyen. Ez a mi alapkoncepciónk itt. Hát közel 15 elmélet gyűlt össze. Azért látszik, hogy Taléria nem kapott annyi figyelmet, de ez várható volt elvégre nem ő a fő névadónk. És hát sajnos az elméletes zsebkönyvünktől el kell búcsúznunk. Sajnos új elméletek már nem születnek. Viszont a legnagyobb Taléria Verézia fanok szívében tovább élnek hihetetlen elméletei és ki tudja, lehet később még meg is cáfolják azokat.</p>
-            <p>Hát íme, itt tartunk fél év után. Az oldal hatalmas fejlődésen ment keresztül, nah de még mi jön ez után. 1 biztos, nem állunk meg. Csak lepihenünk! Kellemes nyári kikapcsolódást mindenkinek! Beluszky és Taléria Verézia legyenek veletek!</p>
-            <p> </p>
-            <p> </p>
-            <p>Azt hitted csak ennyi? Ahh, dehogy is. Nekünk mindig van egy ráadásunk. Szokásunk szerint sosem hagyunk titeket unatkozni. 2 hónap tényleg nagyon sok, mi sem tudjuk, hogy fugjuk kibírni. De azért kicsit segítünk túlélni! BeluszkyAI? Bizony! Regisztrálj a CharacterAI-ra és már mehet is a röhögés! Illetve Instagramon használd #BeluszkyAI hashtag-et a viccesebbnél viccesebb beszélgetéseknél!</p>
-            <a href="https://bit.ly/beluszky-ai" target="_blank">Gyerünk a BeluszkyAI-ra!</a>
-        </div>
-        <div class="hirkartya">
-            <h3>Vége a Beluszky Hallgatózásnak</h3>
-            <p>2025. 06. 21., Szombat</p>
-            <p>Sajnos a Beluszky Hallgatózás véget ért. Köszönjük, hogy ekkora szeretettel kísértétek végig az eseményt. Több, mint 200 Hallgatózást csináltatok meg közösen! Így Beluszky csodálatos hangja több, mint 13 percig hallatszódott.</p>
-            <p>Az esemény alatt elért Aranyköpések Hétfőn jelennek meg az oldalon, melyet már mindenki megtekinthet akkor. ÉS! Itt a ráadás! Megduplázzuk az Aranyköpéseket hisz most az esemény alatt elérhető 10 Aranyköpés mellett további 10 új Aranyköpéssel várunk titeket Hétfőn!</p>
-            <p class="frissítés"><b>Frissítés:</b></p>
-            <p style="margin: 0;">Mostantól elérhetőek az új Aranyköpések! Plusz ráadással, tekintsd meg!</p>
-        </div>
-        <div class="hirkartya">
-            <h3>Hamarosan vége a Beluszky Hallgatózásnak!</h3>
-            <p>2025. 06. 19., Csütörtök</p>
-            <p>Sajnos egyszer minden véget ér. A rádiónk sem marad itt örökké. Már csak egy kicsit több, mint 1 nap van hátra.</p>
-            <p>Pénteken, vagyis az utolsó Hallgatózás napján a csütörtöki Hallgatózást is megcsinálhatjátok. Majd a Hallgatózást lezárjuk és a korábbi Eseményhez hasonlóan a nyeremény Aranyköpéseket közzé tesszük, így mindenki számára elérhető lesz. És vele természetesen plusz új Aranyköpések is érkeznek!</p>
-            <a href="#Hallgassunk">Hallgassunk még egy kicsit!</a>
-        </div>
-        <div class="hirkartya">
-            <h3>Frissítési napló - v.02.30.</h3>
-            <p>2025. 06. 19., Csütörtök</p>
-            <p style="margin-bottom: 0;">A 2025. 06. 19.-ei sürgős leállás után természetesen újításokkal térünk vissza! Itt olvashatjátok miben változtunk.</p>
-            <ul style="margin: 0;">
-                <li>Hírlevél funkció bevezetése
-                    <p style="margin: 0;">Természetesen a hírlevél elég kezdetleges, nincsen túl sok mondani valónk egyenlőre. De tökélet kezdete egy hasznos funkciónak!</p>
-                </li>
-                <li>Menü animáció</li>
-                <li>Nap váltás
-                    <p style="margin: 0;">A rendkívüli leállás miatti kimaradás miatt a csütörtöki Hallgatózás pénteken is elérhető. A pénteki is elérhető, viszont csak is pénteken!</p>
-                </li>
-                <li>Vizuális változások</li>
-                <li>Vizuális hibák javítása</li>
-                <li>Kisebb háttérhibák javítása</li>
-                <li>Inkognitás növelése</li>
-                <li>Jövőben érkező funkció előkészítése</li>
-            </ul>
-        </div>
-    </section>
-
 
     <script>
-        //Hírlap........................................................................................................................................................................
-        document.getElementById("legfrissebb").addEventListener("click", () => {
-            const portal = document.getElementById("hirportal");
-            const hatter = document.getElementById("hirlap-hatter");
-
-            hatter.classList.remove("hidden");
-            portal.classList.remove("hidden");
-
-            setTimeout(() => {
-                hatter.classList.add("show");
-                portal.classList.add("show");
-            }, 10);
+        document.getElementById("open").addEventListener("click", function() {
+            document.getElementById("popup").style.display = "block";
         });
 
-        function closeHirportal() {
-            const portal = document.getElementById("hirportal");
-            const hatter = document.getElementById("hirlap-hatter");
-
-            portal.classList.remove("show");
-            hatter.classList.remove("show");
-
-            setTimeout(() => {
-                portal.classList.add("hidden");
-                hatter.classList.add("hidden");
-            }, 500);
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
         }
-
-        const icons = document.querySelectorAll('.icon');
-        const popup = document.getElementById('popup');
-        const overlay = document.getElementById('overlay');
-
-        icons.forEach(icon => {
-            icon.addEventListener('click', (event) => {
-                // Az ikon előtti idézet lekérése
-                const quote = event.target.closest('li').textContent.replace('Idézet: ', '').trim();
-                popup.textContent = quote; // Idézet megjelenítése
-                popup.style.display = 'block';
-                overlay.style.display = 'block';
-                setTimeout(() => {
-                    popup.style.top = '50%';
-                }, 100);
-            });
-        });
-
-        const hidePopup = () => {
-            popup.style.top = '-50%'; // Kicsúszás animáció
-            setTimeout(() => {
-                popup.style.display = 'none';
-                overlay.style.display = 'none';
-                popup.style.top = '0%'; // Visszaállítás
-            }, 1000); // 3 másodperces animáció időzítés
-        };
-
-        overlay.addEventListener('click', hidePopup);
-
-        function copyToClipboard(element) {
-            const text = element.parentElement.innerText;
-            const additionalText = "- Beluszky";
-            const fullText = text + additionalText;
-            navigator.clipboard.writeText(fullText).then(() => {
-                alert('Szöveg kimásolva: ' + fullText);
-            }).catch(err => {
-                console.error('Hiba történt a másolás során: ', err);
-            });
-        }
-
-        function version() {
-            const vnum = "Ez a verzió a jelenlegi legfrisebb!"
-            document.getElementById('version-info').innerText = vnum
-        }
-
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-    
-            if (menu.classList.contains("show")) {
-                menu.classList.remove("show");
-                setTimeout(() => {
-                    menu.style.display = "none";
-                }, 500); // animáció után elrejtjük
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    menu.classList.add("show");
-                }, 10); // várunk 10ms-et, hogy a transition elinduljon
-            }
-        }
-
-        document.getElementById('last-modified').textContent = document.lastModified;
-
-        const quotes = [
-            "Színvonaltalan, gyerekes, elszomorító",
-            "Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.",
-            "Megkérdőjelezem, hogy most mi a munkám értelme?",
-            "Ha mégegyszer meg látom a kezét, hogy lendít!",
-            "Szolíd, tudatos, tisztelettudó, csak a Kristóf!",
-            "Halihó!",
-            "Belátással, inteligenciával kéne viselkedni.",
-            "Noh!",
-            "Engem nem érdekel ki, csak az, hogy ne legyen.",
-            "Meglepő, szarkasztikus és humoros",
-            "Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.",
-            "Elfogadom a helyzeted, csak egyáltalán nem érdekel.",
-            "Bár én nem vagyok egy analfabéta, jobbágy paraszt.",
-            "Ti is -hozzátenném jogosan- meg lennétek megsértődve, ha miközben beszéltek hozzám én fülhallgatóként, öhm illetve, fülhallgatóval Bizsit hallgatnék.",
-            "Ez kihozza belőlem a vadállatot!",
-            "A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de...",
-            "Hát én mindjárt dobok egy hátast, ilyen fiatalosan fogalmazva.",
-            "Manufaktúra - Közép újkori közép ember",
-            "Öhm... Bocsáss meg, kicsoda? Oh, Tímea, hát igen ő mindig nagyon segítőkész és egy igazán kommunikatív egyéniség.",
-            "Halihó! Figyelem! Szűnjön meg a sus, maradjon a kuss!",
-            "Ez aztán igazán közösségellenes, antikollegiális magatartás.",
-            "Igen, igen most beszéltem Vida Lacival.",
-            "Rendben, megkaptad a négyesed, de attól még fordulj előre!",
-            "Nem, ennyi lehet. Ez se olyan kicsi.",
-            "Csavarom, csavarom, de hiába.",
-            "Ott van Ulrich Zwingly, magyarul Zwingly Ulrich",
-            "Csöndet kérünk (Továbbra is egyedül van), halihó!",
-            "Nem film, csak egy kicsit nagyobb képillusztráció",
-            "A kőrözési listán, a kőrözött személy...",
-            "És valójában ők hozták létre a mai Nyű Jorkot.",
-            "Kicsike, mozgékony, de nehezen elsüllyeszthető.",
-            "Az oroszok annyian vannak, mint az oroszok.",
-            "Aaa... mondjad már, könyörgök! Adók! Köszönöm!",
-            "Jah, hétfőn, bocsánat szamár vagyok.",
-            "Nyilván ennek megvan a saját csínyja, bínyja.",
-            "Aha, itt lehet nagyítani!",
-            "Hát ez egyenlőre nagyon mini.",
-            "Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír",
-            "Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos",
-            "Nem elesett, hanem megölték",
-            "Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.",
-            "Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.",
-            "Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...",
-            "Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.",
-            "Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.",
-            "A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.",
-            "Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.",
-            "Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.",
-        ];
-
-        // A napi idézet lekérése vagy kiválasztása
-        let dailyQuote = localStorage.getItem('daily-quote');
-        if (!dailyQuote) {
-            dailyQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            localStorage.setItem('daily-quote', dailyQuote);
-        }
-
-        // Idézet megjelenítése a DOM-ban
-        document.getElementById('daily-quote').innerText = dailyQuote;
     </script>
 </body>
 </html>
