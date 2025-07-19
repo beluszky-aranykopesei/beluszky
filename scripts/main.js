@@ -10,8 +10,10 @@ supabase
   .select('*')
   .order('Date', { ascending: false })
   .then(({ data, error }) => {
-    console.log(data); // ← ha ide raksz egy logot, látod visszajön-e adat
-  });
+if (error) {
+      console.error('Supabase hiba:', error.message);
+      return;
+    }
     const container = document.getElementById('aranykopesek');
     data.forEach(row => {
       const li = document.createElement('li');
