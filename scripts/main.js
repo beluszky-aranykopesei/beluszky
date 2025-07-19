@@ -21,7 +21,3 @@ if (error) {
       container.appendChild(li);
     });
   });
-
-function openOldVersion() {
-    window.open('https://beluszky-aranykopesei-stabil.vercel.app/', '_blank');
-};
