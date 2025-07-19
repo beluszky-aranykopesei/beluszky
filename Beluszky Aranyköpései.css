@@ -214,16 +214,19 @@ footer p {
     transform: translateY(-10px);
     transition: opacity 0.5s ease, transform 0.3s ease;
 }
+
 .menu a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
+
 .menu a:hover {
     background-color: #cd9d00;
     border-radius: 10px;
 }
+
 .menu-button {
     position: absolute;
     top: 10px;
@@ -384,15 +387,11 @@ a {
 .legfrissebb-bal {
     margin-left: 20px;
     margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .legfrissebb-jobb {
     margin-left: auto;
     margin-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .hirportal {
@@ -450,4 +449,19 @@ a {
 .Beluszky-icon{
     max-width: 20px;
     cursor: pointer;
+}
+
+.warning-bar {
+  background: repeating-linear-gradient(
+    70deg,
+    #ffc300,
+    #ffc300 10px,
+    #000000 10px,
+    #000000 20px
+  );
+  color: white;
+  padding: 0.05px;
+  text-align: center;
+  font-weight: bold;
+  max-height: 12px;
 }
