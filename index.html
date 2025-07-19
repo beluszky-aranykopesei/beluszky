@@ -15,15 +15,15 @@
             <h1 class="logo">Beluszky Aranyköpései</h1>
             <img src="Menu.png" alt="Menu" class="menu-button" onclick="toggleMenu()">
             <div class="menu" id="menu">
-                <a href="https://beluszky-aranykopesei.vercel.app/">Aranyköpések</a>
+                <a href="https://beluszky-aranykopesei.vercel.app/">A Méltán Híres Aranyköpések</a>
                 <a href="https://tal-ria-ver-zia-elm-let.vercel.app/">A Nagy Elmélet</a>
+                <a href="">A Magávalragadó Idővonal</a>
             </div>
         </div>
-        <!--
-            <div class="uzenet">
-                <p class="leall"><b>Leállás</b> - 07. 03.-án, csütörtökön az oldal nagyjából 22:00 és 23:00 között hosszabb ideig leáll. Köszönjük a türelmed!</p>
-            </div>
-        -->
+        <div class="warning-bar"><p> </p></div>
+        <div class="uzenet">
+            <p class="leall"><b>Karbantartás</b> - A nyári leállás idején az oldal részben működik. Lehetnek leállások, funkciók működésbeli zavarai, akár az aranyköpések is eltűnhetnek. Köszönjük türelmedet!</p>
+        </div>
     </header>
 
     <div id="legfrissebb" class="legfrissebb">
@@ -37,6 +37,19 @@
             <h2>Egyszer minden véget ér, de néha csak egy kis időre megyünk el.</h2>
             <p>Néha le kell állni, egy kis kikapcsolódásra van szüksége mindenkinek. Adunk egy kis időt az egyetlen, csodálatos Legendának is! Ki tudja lehet pár hónap múlva egy hatalmas visszatéréssel köszönt minket. Ki tudja? - Addig is olvasd el a szerkesztők évzáró gondolatait a hírportálon!</p>
         </div>
+    </div>
+
+    <div class="coupon2" style="background-color: #ffc300;">
+        <div class="coupon-text2" style="color: black;">
+            <h2>Nyári Karbantartás</h2>
+            <p>Nyári szieszta van, de nem csak Beluszky pihen! Az oldal jelenleg furán viselkedhet: néha eltűnnek aranyköpések, néha egy gomb megnyomása úgy hat, mint egy filozófiai kérdésfelvetés. De ne aggódj, a leállás végére minden összeáll, mint egy jó szónoklat. Kattints a melletti ikonra, és nyisd meg a legutóbb jól működő (és még épeszű) verziót, hogy te azért ne legyél Szamár! </p>
+        </div>
+        <style>
+            .coupon-image2 {
+                background-color: #fff;
+            }
+        </style>
+        <img src="Karbantartás.png" alt="Kép" class="coupon-image2" onclick="openOldVersion()">
     </div>
 
     <div class="coupon">
@@ -612,162 +625,13 @@
         </div>
     </section>
 
-
-    <script>
-        //BeluszkyAI....................................................................................................................................................................
-        function openBeluszkyAI() {
-            window.open('https://bit.ly/beluszky-ai', '_blank');
-        };
-
-        //Hírlap........................................................................................................................................................................
-        document.getElementById("legfrissebb").addEventListener("click", () => {
-            const portal = document.getElementById("hirportal");
-            const hatter = document.getElementById("hirlap-hatter");
-
-            hatter.classList.remove("hidden");
-            portal.classList.remove("hidden");
-
-            setTimeout(() => {
-                hatter.classList.add("show");
-                portal.classList.add("show");
-            }, 10);
-        });
-
-        function closeHirportal() {
-            const portal = document.getElementById("hirportal");
-            const hatter = document.getElementById("hirlap-hatter");
-
-            portal.classList.remove("show");
-            hatter.classList.remove("show");
-
-            setTimeout(() => {
-                portal.classList.add("hidden");
-                hatter.classList.add("hidden");
-            }, 500);
-        }
-
-        const icons = document.querySelectorAll('.icon');
-        const popup = document.getElementById('popup');
-        const overlay = document.getElementById('overlay');
-
-        icons.forEach(icon => {
-            icon.addEventListener('click', (event) => {
-                // Az ikon előtti idézet lekérése
-                const quote = event.target.closest('li').textContent.replace('Idézet: ', '').trim();
-                popup.textContent = quote; // Idézet megjelenítése
-                popup.style.display = 'block';
-                overlay.style.display = 'block';
-                setTimeout(() => {
-                    popup.style.top = '50%';
-                }, 100);
-            });
-        });
-
-        const hidePopup = () => {
-            popup.style.top = '-50%'; // Kicsúszás animáció
-            setTimeout(() => {
-                popup.style.display = 'none';
-                overlay.style.display = 'none';
-                popup.style.top = '0%'; // Visszaállítás
-            }, 1000); // 3 másodperces animáció időzítés
-        };
-
-        overlay.addEventListener('click', hidePopup);
-
-        function copyToClipboard(element) {
-            const text = element.parentElement.innerText;
-            const additionalText = "- Beluszky";
-            const fullText = text + additionalText;
-            navigator.clipboard.writeText(fullText).then(() => {
-                alert('Szöveg kimásolva: ' + fullText);
-            }).catch(err => {
-                console.error('Hiba történt a másolás során: ', err);
-            });
-        }
-
-        function version() {
-            const vnum = "Ez a verzió a jelenlegi legfrisebb!"
-            document.getElementById('version-info').innerText = vnum
-        }
-
-        function toggleMenu() {
-            const menu = document.getElementById("menu");
-    
-            if (menu.classList.contains("show")) {
-                menu.classList.remove("show");
-                setTimeout(() => {
-                    menu.style.display = "none";
-                }, 500); // animáció után elrejtjük
-            } else {
-                menu.style.display = "block";
-                setTimeout(() => {
-                    menu.classList.add("show");
-                }, 10); // várunk 10ms-et, hogy a transition elinduljon
-            }
-        }
-
-        document.getElementById('last-modified').textContent = document.lastModified;
-
-        const quotes = [
-            "Színvonaltalan, gyerekes, elszomorító",
-            "Precíz, jó, értelmes jegyzetek. Egy tévedés van csak benne, Arisztotelésszel kapcsolatban.",
-            "Megkérdőjelezem, hogy most mi a munkám értelme?",
-            "Ha mégegyszer meg látom a kezét, hogy lendít!",
-            "Szolíd, tudatos, tisztelettudó, csak a Kristóf!",
-            "Halihó!",
-            "Belátással, inteligenciával kéne viselkedni.",
-            "Noh!",
-            "Engem nem érdekel ki, csak az, hogy ne legyen.",
-            "Meglepő, szarkasztikus és humoros",
-            "Igazán megismerném milyen lehet érzéketlen, lelkiismeretlen tuskónak lenni.",
-            "Elfogadom a helyzeted, csak egyáltalán nem érdekel.",
-            "Bár én nem vagyok egy analfabéta, jobbágy paraszt.",
-            "Ti is -hozzátenném jogosan- meg lennétek megsértődve, ha miközben beszéltek hozzám én fülhallgatóként, öhm illetve, fülhallgatóval Bizsit hallgatnék.",
-            "Ez kihozza belőlem a vadállatot!",
-            "A véletlenért sem akarom Mátyást az Orosz elnökhöz hasonlítani, de...",
-            "Hát én mindjárt dobok egy hátast, ilyen fiatalosan fogalmazva.",
-            "Manufaktúra - Közép újkori közép ember",
-            "Öhm... Bocsáss meg, kicsoda? Oh, Tímea, hát igen ő mindig nagyon segítőkész és egy igazán kommunikatív egyéniség.",
-            "Halihó! Figyelem! Szűnjön meg a sus, maradjon a kuss!",
-            "Ez aztán igazán közösségellenes, antikollegiális magatartás.",
-            "Igen, igen most beszéltem Vida Lacival.",
-            "Rendben, megkaptad a négyesed, de attól még fordulj előre!",
-            "Nem, ennyi lehet. Ez se olyan kicsi.",
-            "Csavarom, csavarom, de hiába.",
-            "Ott van Ulrich Zwingly, magyarul Zwingly Ulrich",
-            "Csöndet kérünk (Továbbra is egyedül van), halihó!",
-            "Nem film, csak egy kicsit nagyobb képillusztráció",
-            "A kőrözési listán, a kőrözött személy...",
-            "És valójában ők hozták létre a mai Nyű Jorkot.",
-            "Kicsike, mozgékony, de nehezen elsüllyeszthető.",
-            "Az oroszok annyian vannak, mint az oroszok.",
-            "Aaa... mondjad már, könyörgök! Adók! Köszönöm!",
-            "Jah, hétfőn, bocsánat szamár vagyok.",
-            "Nyilván ennek megvan a saját csínyja, bínyja.",
-            "Aha, itt lehet nagyítani!",
-            "Hát ez egyenlőre nagyon mini.",
-            "Tú bí or nát to bí, det is dö kveszcsán. - Beluszky Shékszpír",
-            "Ő volt O.V., de nem Orbán Viktor, ah véletlenül sem. Hanem Orániai Vilmos",
-            "Nem elesett, hanem megölték",
-            "Napkirály... ő volt a 17. századi Donald Trump, csak ő normális volt.",
-            "Hosszú volt a napom, mentek végig az óráim, de sajnálatosan rosszul voltam.",
-            "Ilyen szinten még Sztálin se verte szét, nah mondjuk Hitler igen, de ő el is tűnt a süllyesztőben. Szerencsére...",
-            "Nem az a bajom, hogy szülinapom van, hanem az, hogy ilyen sok.",
-            "Köszönjétek a drága, kedves, elviselhetetlen, tiszteletlen, [...] osztálytársaitoknak.",
-            "A dolgok jelenlegi állása miatt, minden rosszindulat nélkül, egy perccel sem mehettek el hamarabb, sajnálom.",
-            "Nehogy már nektek csak jogaitok legyenek, nekem meg csak kötelességeim.",
-            "Hát 111 év múlva hozzád is eljutott a hír, jobb mint soha.",
-        ];
-
-        // A napi idézet lekérése vagy kiválasztása
-        let dailyQuote = localStorage.getItem('daily-quote');
-        if (!dailyQuote) {
-            dailyQuote = quotes[Math.floor(Math.random() * quotes.length)];
-            localStorage.setItem('daily-quote', dailyQuote);
-        }
-
-        // Idézet megjelenítése a DOM-ban
-        document.getElementById('daily-quote').innerText = dailyQuote;
-    </script>
+    <script src="scripts/BeluszkyAI.js"></script>
+    <script src="scripts/Hirlap.js"></script>
+    <script src="scripts/Nagyitas.js"></script>
+    <script src="scripts/Masolas.js"></script>
+    <script src="scripts/NapiAranykopes.js"></script>
+    <script src="scripts/Menu.js"></script>
+    <script src="scripts/main.js"></script>
+    <script> document.getElementById('last-modified').textContent = document.lastModified;</script>
 </body>
 </html>
