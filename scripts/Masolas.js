@@ -1,3 +1,5 @@
+import { showShareIcon } from './Megosztas.js';
+
 function copyToClipboard(element) {
     const text = element.parentElement.innerText;
     const additionalText = " - Beluszky";
