@@ -8,3 +8,10 @@ function copyToClipboard(element) {
         console.error('Hiba történt a másolás során: ', err);
     });
 }
+
+// 🔔 Megosztás ikon megjelenítése
+        showShareIcon(element.parentElement, finalText);
+    }).catch(err => {
+        console.error('Hiba történt a másolás során:', err);
+    });
+}
