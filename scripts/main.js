@@ -61,3 +61,4 @@ supabase
   });
 
 import { showPopup } from './Nagyitas.js';
+import { copyToClipboard } from './Masolas.js';
