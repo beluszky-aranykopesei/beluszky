@@ -38,7 +38,7 @@ supabase
       const zoomIcon = document.createElement('img');
       zoomIcon.src = 'Szem.png';
       zoomIcon.alt = 'Szem ikon';
-      zoomIcon.class = 'copy-icon';
+      zoomIcon.className = 'icon';
       zoomIcon.title = 'Nagyítás';
 
       // BeluszkyAI ikon – link vagy funkció
