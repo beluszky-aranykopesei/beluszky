@@ -1,4 +1,4 @@
-function showShareIcon(liElement, textToShare) {
+export function showShareIcon(liElement, textToShare) {
     // Ellenőrizzük, van-e már megosztás ikon
     if (liElement.querySelector('.share-icon')) return;
 
