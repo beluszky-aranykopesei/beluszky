@@ -59,3 +59,5 @@ supabase
       container.appendChild(li);
     });
   });
+
+import { showPopup } from './Nagyitas.js';
