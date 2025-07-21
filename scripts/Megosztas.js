@@ -7,10 +7,6 @@ export function showShareIcon(liElement, textToShare) {
     shareIcon.alt = 'Megosztás ikon';
     shareIcon.title = 'Megosztás';
     shareIcon.className = 'share-icon';
-    shareIcon.style.width = '26px';
-    shareIcon.style.height = '26px';
-    shareIcon.style.marginLeft = '8px';
-    shareIcon.style.cursor = 'pointer';
 
     shareIcon.onclick = () => {
         if (navigator.share) {
