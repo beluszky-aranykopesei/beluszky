@@ -254,7 +254,7 @@ footer p {
     color: #000000;
 }
 
-.icon img {
+.icon {
     max-width: 20px;
     cursor: pointer;
 }
