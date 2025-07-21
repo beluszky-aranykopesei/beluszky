@@ -467,7 +467,9 @@ a {
 }
 
 .share-icon {
-  transition: transform 0.2s;
+    transition: transform 0.2s;
+    max-width: 20px;
+    cursor: pointer;
 }
 
 .share-icon:hover {
