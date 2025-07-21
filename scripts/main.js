@@ -16,6 +16,8 @@ if (error) {
       return;
     }
     const container = document.getElementById('aranykopesek');
+    container.innerHTML = '';
+    
     data.forEach(row => {
       const li = document.createElement('li');
       li.textContent = row.Content;
