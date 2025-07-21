@@ -465,3 +465,12 @@ a {
   font-weight: bold;
   max-height: 12px;
 }
+
+.share-icon {
+  transition: transform 0.2s;
+}
+
+.share-icon:hover {
+  transform: scale(1.2);
+}
+
