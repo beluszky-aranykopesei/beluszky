@@ -1,11 +1,9 @@
 function copyToClipboard(element) {
-    const fullText = element.parentElement.innerText.trim();
-    const trimmedText = fullText.slice(0, -3); // utolsó 3 karakter eltávolítása
+    const text = element.parentElement.innerText;
     const additionalText = " - Beluszky";
-    const finalText = trimmedText + additionalText;
-
-    navigator.clipboard.writeText(finalText).then(() => {
-        alert('Szöveg kimásolva: ' + finalText);
+    const fullText = text + additionalText;
+    navigator.clipboard.writeText(fullText).then(() => {
+        alert('Szöveg kimásolva: ' + fullText);
     }).catch(err => {
         console.error('Hiba történt a másolás során: ', err);
     });
