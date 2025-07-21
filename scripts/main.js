@@ -9,6 +9,7 @@ supabase
   .from('quotes')
   .select('*')
   .order('Date', { ascending: false })
+  .order('id', {ascending: true})
   .then(({ data, error }) => {
 if (error) {
       console.error('Supabase hiba:', error.message);
