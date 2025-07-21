@@ -32,7 +32,7 @@ supabase
       copyIcon.alt = 'Másolás ikon';
       copyIcon.className = 'copy-icon';
       copyIcon.title = 'Másolás vágólapra';
-      copyIcon.onclick = 'copyToClipboard(this)';
+      copyIcon.onclick = "copyToClipboard(this)";
 
       // Szem ikon (nagyítás – pl. alert, később modal)
       const zoomIcon = document.createElement('img');
