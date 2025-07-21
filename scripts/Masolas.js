@@ -8,7 +8,7 @@ export function copyToClipboard(element) {
         alert('Szöveg kimásolva: ' + fullText);
 
 // 🔔 Megosztás ikon megjelenítése
-        showShareIcon(element.parentElement, finalText);
+        showShareIcon(element.parentElement, fullText);
     }).catch(err => {
         console.error('Hiba történt a másolás során:', err);
     });
