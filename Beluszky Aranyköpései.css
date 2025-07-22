@@ -516,3 +516,6 @@ body.dark-mode {
   filter: brightness(85%);
 }
 
+.blurred {
+    filter: blur(6px);
+}
