@@ -476,3 +476,25 @@ a {
   transform: scale(1.2);
 }
 
+.beluszky-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff8dc;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.beluszky-menu button {
+  display: block;
+  margin: 0.5em 0;
+  background: #ffcc00;
+  border: none;
+  padding: 0.6em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+}
