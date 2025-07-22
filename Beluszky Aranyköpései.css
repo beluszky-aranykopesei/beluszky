@@ -498,3 +498,21 @@ a {
   font-size: 1em;
   cursor: pointer;
 }
+
+body.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .kopes-item {
+  background: #1e1e1e;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .icon-group img,
+.dark-mode .Beluszky-icon,
+.dark-mode .copy-icon,
+.dark-mode .zoom-icon {
+  filter: brightness(85%);
+}
+
