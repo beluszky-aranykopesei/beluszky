@@ -62,3 +62,15 @@ supabase
 
 import { showPopup } from './Nagyitas.js';
 import { copyToClipboard } from './Masolas.js';
+
+let blurClickCount = 0;
+
+function openDevMode() {
+  blurClickCount++;
+
+  if (blurClickCount === 5) {
+    const blurredElement = document.getElementById('blurred');
+    blurredElement.classList.remove('blurred');
+    console.log('🎉 Blur kikapcsolva az 5. kattintásra!');
+  }
+}
