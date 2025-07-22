@@ -27,6 +27,25 @@ function showBeluszkyMenu(quote) {
     document.body.appendChild(menu);
 }
 
+function speakQuote(text) {
+    const utterance = new SpeechSynthesisUtterance(text);
+    speechSynthesis.speak(utterance);
+}
+
+function rethinkQuote(text) {
+    alert('🤔 Újragondolt változat:\n' + text + ' — de más megfogalmazásban...');
+}
+
+function explainQuote(text) {
+    alert('📘 Magyarázat:\nEz az aranyköpés azt jelenti, hogy...');
+}
+
+function openBeluszkyAI(text) {
+    const encoded = encodeURIComponent(text);
+    window.open(`https://character.ai/chat?quote=${encoded}`, '_blank');
+}
+
+
 function openOldVersion() {
     window.open('https://beluszky-aranykopesei-stabil.vercel.app/', '_blank');
 };
