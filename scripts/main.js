@@ -52,7 +52,7 @@ supabase
       aiIcon.alt = 'BeluszkyAI';
       aiIcon.className = 'Beluszky-icon';
       aiIcon.title = 'Beszélj BeluszkyAI-jal';
-      aiIcon.onclick = () => openBeluszkyAI(row.Content);
+      aiIcon.onclick = () => showBeluszkyMenu(row.Content);
 
       // Ikonok beszúrása
       li.append(copyIcon, zoomIcon, aiIcon);
