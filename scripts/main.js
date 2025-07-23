@@ -62,10 +62,3 @@ supabase
       container.appendChild(li);
     });
   });
-
-const { data: { user } } = await supabase.auth.getUser();
-if (user) {
-  console.log('Be van jelentkezve:', user.email);
-}
-
-document.getElementById('signupForm').addEventListener('submit', signUpOrSignInWithPassword);
