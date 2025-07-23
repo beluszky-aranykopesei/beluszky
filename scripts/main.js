@@ -1,5 +1,4 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
-import { signUpOrSignInWithPassword, sendMagicLink } from './SignUp.js';
 import { showPopup } from './Nagyitas.js';
 import { copyToClipboard } from './Masolas.js';
 
