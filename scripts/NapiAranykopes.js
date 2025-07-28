@@ -9,6 +9,3 @@ export function getDailyQuote(quotes) {
   }
   return dailyQuote || 'Nincs mára Aranyköpésünk.';
 }
-
-// Idézet megjelenítése a DOM-ban
-document.getElementById('daily-quote').innerText = dailyQuote;
