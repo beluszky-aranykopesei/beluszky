@@ -61,3 +61,6 @@ supabase
       container.appendChild(li);
     });
   });
+
+window.quotesData = data; // már lekért Supabase adatok
+
