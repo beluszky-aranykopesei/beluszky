@@ -1,6 +1,6 @@
 const allQuotes = window.quotesData;
 
-export function getDailyQuote(quotes) {
+function getDailyQuote(quotes) {
   let dailyQuote = localStorage.getItem('daily-quote');
   if (!dailyQuote && quotes && quotes.length > 0) {
     const randomIndex = Math.floor(Math.random() * quotes.length);
