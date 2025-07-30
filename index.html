@@ -116,9 +116,17 @@
 
     <div class="overlay" id="overlay"></div>
     <div class="popup" id="popup"></div>
-    <div id="overlay-event"></div>
-    <div id="message-box">
-        <h2 id="question">A Beluszky Hallgatózásnak sajnos vége. De ígérjük nem sokára újra találkozunk!</h2>    
+    <div id="account-overlay"></div>
+    <div id="account-popup">
+        <video id="introVideo" autoplay muted playsinline>
+            <source src="beluszky-intro.mp4" type="video/mp4">
+            A böngésződ nem támogatja a videó lejátszást.
+        </video>
+        <h2>Belépés a Legendák Klubjába</h2>
+        <input type="text" id="username" placeholder="Felhasználónév">
+        <input type="password" id="password" placeholder="Jelszó">
+        <button onclick="createAccount()">Fiók létrehozása</button>
+        <button onclick="closeAccountPopup()">Bezárás</button>
     </div>
     <div id="hirlap-hatter" class="hirlap-hatter hidden" onclick="closeHirportal()"></div>
     <section id="hirportal" class="hirportal hidden">
@@ -130,6 +138,8 @@
             <p>[Tartalom]</p>
         </div>
         -->
+
+        <!--Hírek----------------------------------------------------------------------------------------------->
         <div class="hirkartya">
             <h3>Frissítési napló - v.02.31.</h3>
             <p>2025. 07. 03., Csütörtök</p>
