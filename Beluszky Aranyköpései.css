@@ -521,3 +521,23 @@ body.dark-mode {
     pointer-events: none;
     user-select: none;
 }
+
+#account-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  display: none;
+}
+
+#account-popup {
+  position: fixed;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2em;
+  border-radius: 10px;
+  z-index: 1001;
+  display: none;
+}
