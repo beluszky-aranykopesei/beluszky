@@ -1,6 +1,7 @@
 function openAccountPopup() {
   document.getElementById('account-overlay').style.display = 'block';
   document.getElementById('account-popup').style.display = 'block';
+  console.log('Account overlay megjelent!');
 }
 
 function closeAccountPopup() {
