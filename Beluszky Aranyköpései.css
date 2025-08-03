@@ -556,3 +556,29 @@ body.dark-mode {
   font-size: 1.1em;
 }
 
+.popup-input {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  width: 80%;
+  font-size: 1em;
+}
+
+.popup-button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ffc300;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.popup-magic {
+  display: block;
+  margin-top: 12px;
+  color: #cd9d00;
+  font-style: italic;
+  text-decoration: underline;
+}
+
