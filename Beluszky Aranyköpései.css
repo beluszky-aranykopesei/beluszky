@@ -540,4 +540,8 @@ body.dark-mode {
   border-radius: 10px;
   z-index: 1001;
   display: none;
+  flex-direction: column;
+  align-items: center; /* középre igazítás */
+  gap: 12px; /* távolság a linkek között */
 }
+
