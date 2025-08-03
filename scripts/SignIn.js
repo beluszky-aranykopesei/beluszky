@@ -18,7 +18,7 @@ function LogIn() {
       <a href="#" class="popup-magic">Beluszky Titkos linkje</a>
     </div>
   `;
-  document.getElementById("popupContent").innerHTML = loginForm;
+  document.getElementById("account-popup").innerHTML = loginForm;
 }
 
 
