@@ -20,3 +20,9 @@ function createAccount() {
     alert('Kérlek, minden mezőt tölts ki!');
   }
 }
+
+const popupOverlay = document.getElementById("popupOverlay");
+
+popupOverlay.addEventListener("click", function () {
+  closeAccountPopup(); // Meghívja a saját záró függvényt
+});
