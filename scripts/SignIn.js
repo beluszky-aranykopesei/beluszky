@@ -22,7 +22,7 @@ function LogIn() {
 }
 
 
-const popupOverlay = document.getElementById("popup-overlay");
+const popupOverlay = document.getElementById("account-overlay");
 
 popupOverlay.addEventListener("click", function () {
   closeAccountPopup(); // Meghívja a saját záró függvényt
