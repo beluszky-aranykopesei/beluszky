@@ -9,6 +9,19 @@ function closeAccountPopup() {
   document.getElementById('account-popup').style.display = 'none';
 }
 
+function LogIn() {
+  const loginForm = `
+    <div id="loginForm">
+      <input type="text" placeholder="Felhasználónév" class="popup-input" />
+      <input type="password" placeholder="Jelszó" class="popup-input" />
+      <button class="popup-button">Bejelentkezés</button>
+      <a href="#" class="popup-magic">Beluszky Titkos linkje</a>
+    </div>
+  `;
+  document.getElementById("popupContent").innerHTML = loginForm;
+}
+
+
 const popupOverlay = document.getElementById("popupOverlay");
 
 popupOverlay.addEventListener("click", function () {
