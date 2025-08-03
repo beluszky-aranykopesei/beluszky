@@ -540,8 +540,18 @@ body.dark-mode {
   border-radius: 10px;
   z-index: 1001;
   display: none;
-  flex-direction: column;
-  align-items: center; /* középre igazítás */
-  gap: 12px; /* távolság a linkek között */
 }
 
+.popup-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.popup-links a {
+  display: block;
+  color: #ffcc00;
+  text-decoration: none;
+  font-size: 1.1em;
+}
