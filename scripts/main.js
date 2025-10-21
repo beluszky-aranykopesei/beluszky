@@ -77,6 +77,7 @@ data.forEach(row => {
   li.append(copyIcon, zoomIcon, aiIcon);
   quoteList.appendChild(li);
 });
+});
 
 document.addEventListener('DOMContentLoaded', () => {
   const quote = getDailyQuote(window.quotesData);
@@ -85,6 +86,3 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
-
-
-
