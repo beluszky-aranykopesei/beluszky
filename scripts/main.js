@@ -27,35 +27,6 @@ supabase
     data.forEach(row => {
       const li = document.createElement('li');
 
-      const now = new Date();
-const oneMonthAgo = new Date();
-oneMonthAgo.setMonth(now.getMonth() - 1);
-
-data.forEach((quote) => {
-  const quoteDate = new Date(quote.created_at); // vagy a megfelelő dátummező
-
-  const li = document.createElement('li');
-  li.classList.add('aranykopesek');
-
-  const span = document.createElement('span');
-  span.textContent = quote.text;
-
-  // Ha az idézet 1 hónapnál fiatalabb
-  if (quoteDate > oneMonthAgo) {
-    span.classList.add('uj_szoveg');
-
-    const ujIcon = document.createElement('img');
-    ujIcon.src = 'Új.png';
-    ujIcon.alt = 'Új';
-    ujIcon.classList.add('uj'); // már definiált CSS osztály
-    span.appendChild(ujIcon);
-  }
-
-  li.appendChild(span);
-  // ...további ikonok (másolás, nagyítás stb.)
-  quoteList.appendChild(li);
-});
-
       // Szöveg
       const textNode = document.createTextNode(row.Content);
       li.appendChild(textNode);
@@ -100,6 +71,35 @@ document.addEventListener('DOMContentLoaded', () => {
   if (quoteElement) {
     quoteElement.innerText = quote;
   }
+});
+
+const now = new Date();
+const oneMonthAgo = new Date();
+oneMonthAgo.setMonth(now.getMonth() - 1);
+
+data.forEach((quote) => {
+  const quoteDate = new Date(quote.created_at); // vagy a megfelelő dátummező
+
+  const li = document.createElement('li');
+  li.classList.add('aranykopesek');
+
+  const span = document.createElement('span');
+  span.textContent = quote.text;
+
+  // Ha az idézet 1 hónapnál fiatalabb
+  if (quoteDate > oneMonthAgo) {
+    span.classList.add('uj_szoveg');
+
+    const ujIcon = document.createElement('img');
+    ujIcon.src = 'Új.png';
+    ujIcon.alt = 'Új';
+    ujIcon.classList.add('uj'); // már definiált CSS osztály
+    span.appendChild(ujIcon);
+  }
+
+  li.appendChild(span);
+  // ...további ikonok (másolás, nagyítás stb.)
+  quoteList.appendChild(li);
 });
 
 
