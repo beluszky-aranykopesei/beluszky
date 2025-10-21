@@ -29,72 +29,54 @@ supabase
 const oneMonthAgo = new Date();
 oneMonthAgo.setMonth(now.getMonth() - 1);
 
-window.quotesData.forEach((quote) => {
-  const quoteDate = new Date(quote.created_at); // vagy a megfelelő dátummező
+data.forEach(row => {
+  if (!row.Content || row.Content.trim() === '') return;
 
+  const quoteDate = new Date(row.created_at);
   const li = document.createElement('li');
   li.classList.add('aranykopesek');
 
   const span = document.createElement('span');
-  span.textContent = quote.text;
+  span.textContent = row.Content;
 
-  // Ha az idézet 1 hónapnál fiatalabb
   if (quoteDate > oneMonthAgo) {
     span.classList.add('uj_szoveg');
-
     const ujIcon = document.createElement('img');
     ujIcon.src = 'Új.png';
     ujIcon.alt = 'Új';
-    ujIcon.classList.add('uj'); // már definiált CSS osztály
+    ujIcon.classList.add('uj');
     span.appendChild(ujIcon);
   }
 
   li.appendChild(span);
-  // ...további ikonok (másolás, nagyítás stb.)
+
+  // Másolás ikon
+  const copyIcon = document.createElement('img');
+  copyIcon.src = 'Másolás.png';
+  copyIcon.alt = 'Másolás ikon';
+  copyIcon.className = 'copy-icon';
+  copyIcon.title = 'Másolás vágólapra';
+  copyIcon.onclick = function () { copyToClipboard(this); };
+
+  // Nagyítás ikon
+  const zoomIcon = document.createElement('img');
+  zoomIcon.src = 'Szem.png';
+  zoomIcon.alt = 'Szem ikon';
+  zoomIcon.className = 'zoom-icon';
+  zoomIcon.title = 'Nagyítás';
+  zoomIcon.onclick = function () { showPopup(row.Content); };
+
+  // BeluszkyAI ikon
+  const aiIcon = document.createElement('img');
+  aiIcon.src = 'BeluszkyAI.png';
+  aiIcon.alt = 'BeluszkyAI';
+  aiIcon.className = 'Beluszky-icon';
+  aiIcon.title = 'Beszélj BeluszkyAI-jal';
+  aiIcon.onclick = () => openBeluszkyAI(row.Content);
+
+  li.append(copyIcon, zoomIcon, aiIcon);
   quoteList.appendChild(li);
 });
-
-    data.forEach(row => {
-      if (!row.Content || row.Content.trim() === '') return;
-      const li = document.createElement('li');
-
-      // Szöveg
-      const textNode = document.createTextNode(row.Content);
-      li.appendChild(textNode);
-
-      // Másolás ikon
-      const copyIcon = document.createElement('img');
-      copyIcon.src = 'Másolás.png';
-      copyIcon.alt = 'Másolás ikon';
-      copyIcon.className = 'copy-icon';
-      copyIcon.title = 'Másolás vágólapra';
-      copyIcon.onclick = function () {
-        copyToClipboard(this);
-      };
-
-      // Szem ikon (nagyítás – pl. alert, később modal)
-      const zoomIcon = document.createElement('img');
-      zoomIcon.src = 'Szem.png';
-      zoomIcon.alt = 'Szem ikon';
-      zoomIcon.className = 'zoom-icon'; // elnevezheted másként is
-      zoomIcon.title = 'Nagyítás';
-      zoomIcon.onclick = function () {
-        showPopup(row.Content);
-      };
-
-      // BeluszkyAI ikon – link vagy funkció
-      const aiIcon = document.createElement('img');
-      aiIcon.src = 'BeluszkyAI.png';
-      aiIcon.alt = 'BeluszkyAI';
-      aiIcon.className = 'Beluszky-icon';
-      aiIcon.title = 'Beszélj BeluszkyAI-jal';
-      aiIcon.onclick = () => openBeluszkyAI(row.Content);
-
-      // Ikonok beszúrása
-      li.append(copyIcon, zoomIcon, aiIcon);
-      quoteList.appendChild(li);
-    });
-  });
 
 document.addEventListener('DOMContentLoaded', () => {
   const quote = getDailyQuote(window.quotesData);
@@ -103,5 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
 
 
