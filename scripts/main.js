@@ -35,7 +35,7 @@ data.forEach((quote) => {
   const quoteDate = new Date(quote.created_at); // vagy a megfelelő dátummező
 
   const li = document.createElement('li');
-  li.classList.add('quote-container');
+  li.classList.add('aranykopesek');
 
   const span = document.createElement('span');
   span.textContent = quote.text;
@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
 
 
 
