@@ -90,7 +90,7 @@ data.forEach((quote) => {
 
       // Ikonok beszúrása
       li.append(copyIcon, zoomIcon, aiIcon);
-      container.appendChild(li);
+      quoteList.appendChild(li);
     });
   });
 
@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
 
 
 
