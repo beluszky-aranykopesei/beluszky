@@ -244,6 +244,8 @@ footer p {
 
 .uj {
     width: 20px;
+    margin-left: 10px;
+    margin-right: -10px;
 }
 
 .uj_szoveg {
@@ -581,4 +583,5 @@ body.dark-mode {
   font-style: italic;
   text-decoration: underline;
 }
+
 
