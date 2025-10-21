@@ -78,11 +78,4 @@ data.forEach(row => {
 });
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const quote = getDailyQuote(window.quotesData);
-  const quoteElement = document.getElementById('daily-quote');
-  if (quoteElement) {
-    quoteElement.innerText = quote;
-  }
-});
 
