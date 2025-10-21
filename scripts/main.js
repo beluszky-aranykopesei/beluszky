@@ -55,6 +55,7 @@ window.quotesData.forEach((quote) => {
 });
 
     data.forEach(row => {
+      if (!row.Content || row.Content.trim() === '') return;
       const li = document.createElement('li');
 
       // Szöveg
@@ -102,4 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
 
