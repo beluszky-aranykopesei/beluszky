@@ -21,6 +21,10 @@ supabase
 
     window.quotesData = data; // már lekért Supabase adatok
 
+    
+    const quoteList = document.getElementById('aranykopesek');
+    quoteList.innerHTML = '';
+
     const now = new Date();
 const oneMonthAgo = new Date();
 oneMonthAgo.setMonth(now.getMonth() - 1);
@@ -49,9 +53,6 @@ window.quotesData.forEach((quote) => {
   // ...további ikonok (másolás, nagyítás stb.)
   quoteList.appendChild(li);
 });
-
-    const quoteList = document.getElementById('aranykopesek');
-    quoteList.innerHTML = '';
 
     data.forEach(row => {
       const li = document.createElement('li');
@@ -101,3 +102,4 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
