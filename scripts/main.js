@@ -77,7 +77,7 @@ const now = new Date();
 const oneMonthAgo = new Date();
 oneMonthAgo.setMonth(now.getMonth() - 1);
 
-data.forEach((quote) => {
+window.quotesData.forEach((quote) => {
   const quoteDate = new Date(quote.created_at); // vagy a megfelelő dátummező
 
   const li = document.createElement('li');
@@ -101,6 +101,7 @@ data.forEach((quote) => {
   // ...további ikonok (másolás, nagyítás stb.)
   quoteList.appendChild(li);
 });
+
 
 
 
