@@ -21,8 +21,8 @@ supabase
 
     window.quotesData = data; // már lekért Supabase adatok
 
-    const container = document.getElementById('aranykopesek');
-    container.innerHTML = '';
+    const quoteList = document.getElementById('aranykopesek');
+    quoteList.innerHTML = '';
 
     data.forEach(row => {
       const li = document.createElement('li');
@@ -101,6 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
     quoteElement.innerText = quote;
   }
 });
+
 
 
 
