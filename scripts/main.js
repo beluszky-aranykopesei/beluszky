@@ -31,7 +31,7 @@ oneMonthAgo.setMonth(now.getMonth() - 1);
 data.forEach(row => {
   if (!row.Content || row.Content.trim() === '') return;
 
-  const quoteDate = new Date(row.created_at);
+  const quoteDate = new Date(row.Date);
   const li = document.createElement('li');
   li.classList.add('aranykopesek');
 
@@ -77,5 +77,6 @@ data.forEach(row => {
   quoteList.appendChild(li);
 });
 });
+
 
 
