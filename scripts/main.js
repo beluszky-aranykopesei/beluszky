@@ -78,5 +78,52 @@ data.forEach(row => {
 });
 });
 
+//Hirdetés
+const ads = [
+  {
+    img: "Aranyköpés.jpg",
+    title: "A hatalmas köpés, méghozzá aranyból",
+    text: "Bár itt aranyköpéseket írunk le, megnyugodhat nem lesz nedves. Elméletileg. Ugyanakkor ajánjuk a papírzsebkendő kézhez ragadását, hisz örömkönnyekben gazdag időtöltés lesz, ezt garantáljuk!"
+  },
+  {
+    img: "Beluszky.jpg",
+    title: "Köszönetnyílvántás",
+    text: "Egy biztos: Nem minden hős visel köpenyt! Köszönjük a Legendának, aki legjobb gondolataival és eszével színesíti társadalmunkat, és persze mindennapjainkat! A legnagyobb, a csodálatos, a jószívű, az egyetlen, örökkké (szigorúan 3 k-val)!"
+  },
+  {
+    img: "Megosztás.png",
+    title: "Oszd meg az élményt másokkal is!",
+    text: "A jó dolgok közösen a legjobbak! Másold ki a kedvenc idézeteid, majd a megosztás ikonra kattintva oszd meg ismerőseiddel, hogy ők is röhöghessenek egy jót!"
+  },
+  {
+    img: "BeluszkyAI.png",
+    title: "Van remény?",
+    text: "Bizony! Sosem fogsz unatkozni, ha kipróbálod a #BeluszkyAI-t! Nyomj az Aranyköpés melletti BeluszkyAI robotra és csevegj egy jó a bár nem igazi, még is élethű Beluszkyval!"
+  }
+];
 
+let index = 0;
+const slide = document.querySelector('.ad-slide');
+const left = document.querySelector('.ad-nav.left');
+const right = document.querySelector('.ad-nav.right');
 
+function renderAd(i) {
+  const ad = ads[i];
+  slide.innerHTML = `
+    <img src="${ad.img}" alt="Hirdetés ikon">
+    <div class="ad-text">
+      <h4>${ad.title}</h4>
+      <p>${ad.text}</p>
+    </div>
+  `;
+}
+
+left.addEventListener('click', () => {
+  index = (index - 1 + ads.length) % ads.length;
+  renderAd(index);
+});
+
+right.addEventListener('click', () => {
+  index = (index + 1) % ads.length;
+  renderAd(index);
+});
