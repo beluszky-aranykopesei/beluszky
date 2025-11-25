@@ -586,7 +586,6 @@ body.dark-mode {
 
 .ad-carousel {
   position: relative;
-  top: 10px;
   left: 0;
   right: 0;
   height: 300px;
@@ -602,6 +601,7 @@ body.dark-mode {
   border-radius: 16px;
     margin-left: 20px;
     margin-right: 20px;
+    margin-top: 10px;
 }
 
 .ad-slide {
@@ -641,3 +641,4 @@ body.dark-mode {
   border-radius: 6px;
   cursor: pointer;
 }
+
