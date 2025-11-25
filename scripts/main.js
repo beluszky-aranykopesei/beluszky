@@ -91,7 +91,7 @@ const ads = [
     text: "Egy biztos: Nem minden hős visel köpenyt! Köszönjük a Legendának, aki legjobb gondolataival és eszével színesíti társadalmunkat, és persze mindennapjainkat! A legnagyobb, a csodálatos, a jószívű, az egyetlen, örökkké (szigorúan 3 k-val)!"
   },
   {
-    img: "Megosztás.png",
+    img: "Megosztas.png",
     title: "Oszd meg az élményt másokkal is!",
     text: "A jó dolgok közösen a legjobbak! Másold ki a kedvenc idézeteid, majd a megosztás ikonra kattintva oszd meg ismerőseiddel, hogy ők is röhöghessenek egy jót!"
   },
@@ -127,3 +127,4 @@ right.addEventListener('click', () => {
   index = (index + 1) % ads.length;
   renderAd(index);
 });
+
