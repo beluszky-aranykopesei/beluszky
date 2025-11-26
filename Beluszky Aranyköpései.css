@@ -27,19 +27,6 @@ h1 {
     .legfrissebb {
         height: 40px;
     }
-    .ad-slide {
-        gap: 15px;
-    }
-    .ad-slide img {
-        width: 100px;
-        height: 100px;
-    }
-    .ad-nav {
-        font-size: 20px;
-        width: 30px;
-        height: 30px;
-        margin: 0px;
-    }
 }
 
 .logo {
@@ -654,3 +641,4 @@ body.dark-mode {
   border-radius: 50%;
   cursor: pointer;
 }
+
