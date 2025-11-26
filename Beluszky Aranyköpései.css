@@ -661,9 +661,8 @@ body.dark-mode {
 }
 
 .ad-carousel {
-  background: red !important;
   display: flex !important;
-  position: sticky !important;
-  top: 0 !important;
+  margin-top: 0 !important;
   z-index: 9999 !important;
 }
+
