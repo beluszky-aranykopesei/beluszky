@@ -602,66 +602,55 @@ body.dark-mode {
 
 .ad-carousel {
   display: flex;
-  position: relatve;
-  margin-top: 20px;
-  background: #111;
-  color: #fff;
-  height: 200px;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 10px;
+  width: 100%;
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border-radius: 0 0 16px 16px;
   box-shadow: 0 4px 12px rgba(0,0,0,.3);
+  position: relative;
   z-index: 1;
-  border-radius: 16px;
-  margin-left: 20px;
-  margin-right: 20px;
 }
 
 .ad-slide {
   display: flex;
   align-items: center;
-  gap: 50px;
-  max-width: 2000px;
-  width: 100%;
-  text-align: left;
+  gap: 10px;
+  max-width: 90%;
   flex-direction: row;
   opacity: 1;
-  transition: opacity 0.5s ease; /* 0,5s áttűnés */
+  transition: opacity 0.5s ease;
 }
 
 .ad-slide img {
-  width: 150px;
-  height: 150px;
+  width: 48px;
+  height: 48px;
   object-fit: cover;
   border-radius: 8px;
 }
 
 .ad-text h4 {
-  font-size: 25px;
+  font-size: 14px;
   margin: 0;
 }
 
 .ad-text p {
-  font-size: 20px;
+  font-size: 12px;
   margin: 4px 0 0;
-  color: rgba(255,255,255,.7);
+  color: rgba(255,255,255,.8);
 }
 
 .ad-nav {
-  background: rgba(255,255,255,.1);
+  background: rgba(255,255,255,.15);
   border: none;
   color: #fff;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  border-radius: 6px;
+  font-size: 22px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   cursor: pointer;
-    margin: 10px;
-}
-
-.ad-carousel {
-  display: flex !important;
-  background: red !important;
-  position: relative !important;
 }
