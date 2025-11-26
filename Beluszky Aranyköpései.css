@@ -385,7 +385,7 @@ a {
     margin-right: 20px;
     margin-bottom: 0px;
     align-items: center;
-    height: 30px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -643,4 +643,5 @@ body.dark-mode {
   cursor: pointer;
     margin: 10px;
 }
+
 
