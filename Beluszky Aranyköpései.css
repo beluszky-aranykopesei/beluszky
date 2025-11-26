@@ -601,21 +601,21 @@ body.dark-mode {
 }
 
 .ad-carousel {
-  position: relative;
+  display: flex;
+  position: fixed;
   margin-top: 20px;
-  height: 200px;
   background: #111;
   color: #fff;
-  display: flex;
+  height: 200px;
   align-items: center;
   justify-content: center;
   gap: 12px;
   padding: 10px;
-  box-shadow: 0 -4px 12px rgba(0,0,0,.3);
+  box-shadow: 0 4px 12px rgba(0,0,0,.3);
   z-index: 9999;
   border-radius: 16px;
-    margin-left: 20px;
-    margin-right: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .ad-slide {
@@ -659,10 +659,3 @@ body.dark-mode {
   cursor: pointer;
     margin: 10px;
 }
-
-.ad-carousel {
-  display: flex !important;
-  margin-top: 0 !important;
-  z-index: 9999 !important;
-}
-
