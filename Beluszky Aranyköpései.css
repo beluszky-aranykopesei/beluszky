@@ -660,4 +660,8 @@ body.dark-mode {
     margin: 10px;
 }
 
-
+.ad-carousel {
+  display: flex !important;
+  background: red !important;
+  position: relative !important;
+}
