@@ -109,13 +109,22 @@ const right = document.querySelector('.ad-nav.right');
 
 function renderAd(i) {
   const ad = ads[i];
-  slide.innerHTML = `
-    <img src="${ad.img}" alt="Hirdetés ikon">
-    <div class="ad-text">
-      <h4>${ad.title}</h4>
-      <p>${ad.text}</p>
-    </div>
-  `;
+  
+  // kifakulás
+  slide.style.opacity = 0;
+  
+  setTimeout(() => {
+    // új tartalom betöltése
+    slide.innerHTML = `
+      <img src="${ad.img}" alt="Hirdetés ikon">
+      <div class="ad-text">
+        <h4>${ad.title}</h4>
+        <p>${ad.text}</p>
+      </div>
+    `;
+    // beúszás
+    slide.style.opacity = 1;
+  }, 500); // 0,5s átfedés
 }
 
 left.addEventListener('click', () => {
@@ -127,5 +136,6 @@ right.addEventListener('click', () => {
   index = (index + 1) % ads.length;
   renderAd(index);
 });
+
 
 
