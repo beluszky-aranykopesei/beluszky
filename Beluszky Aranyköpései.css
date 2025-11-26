@@ -602,7 +602,7 @@ body.dark-mode {
 
 .ad-carousel {
   display: flex;
-  position: fixed !important;
+  position: relatve;
   margin-top: 20px;
   background: #111;
   color: #fff;
@@ -612,7 +612,7 @@ body.dark-mode {
   gap: 12px;
   padding: 10px;
   box-shadow: 0 4px 12px rgba(0,0,0,.3);
-  z-index: 9999;
+  z-index: 1;
   border-radius: 16px;
   margin-left: 20px;
   margin-right: 20px;
@@ -659,4 +659,5 @@ body.dark-mode {
   cursor: pointer;
     margin: 10px;
 }
+
 
