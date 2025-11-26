@@ -79,6 +79,10 @@ data.forEach(row => {
 });
 
 //Hirdetés
+document.addEventListener("DOMContentLoaded", () => {
+  renderAd(index);
+});
+
 const ads = [
   {
     img: "Aranyköpés.jpg",
@@ -142,6 +146,7 @@ setInterval(() => {
   index = (index + 1) % ads.length; // léptetés
   renderAd(index);
 }, 7500);
+
 
 
 
