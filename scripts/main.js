@@ -137,5 +137,12 @@ right.addEventListener('click', () => {
   renderAd(index);
 });
 
+// Automatikus váltás 7,5 másodpercenként
+setInterval(() => {
+  index = (index + 1) % ads.length; // léptetés
+  renderAd(index);
+}, 7500);
+
+
 
 
