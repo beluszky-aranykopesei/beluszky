@@ -602,7 +602,7 @@ body.dark-mode {
 
 .ad-carousel {
   display: flex;
-  position: fixed;
+  position: fixed !important;
   margin-top: 20px;
   background: #111;
   color: #fff;
@@ -659,3 +659,4 @@ body.dark-mode {
   cursor: pointer;
     margin: 10px;
 }
+
