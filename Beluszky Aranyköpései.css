@@ -24,6 +24,9 @@ h1 {
         white-space: normal;
         word-wrap: break-word;
     }
+    .legfrissebb {
+        height: 40px;
+    }
 }
 
 .logo {
@@ -586,9 +589,7 @@ body.dark-mode {
 
 .ad-carousel {
   position: relative;
-  top: 10px;
-  left: 0;
-  right: 0;
+  margin-top: 20px;
   height: 200px;
   background: #111;
   color: #fff;
@@ -642,3 +643,4 @@ body.dark-mode {
   cursor: pointer;
     margin: 10px;
 }
+
