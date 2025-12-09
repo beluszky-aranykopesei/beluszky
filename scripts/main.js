@@ -1,11 +1,5 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
 import { showPopup } from './Nagyitas.js';
 import { copyToClipboard } from './Masolas.js';
-
-const supabaseUrl = 'https://wqerrkvnnwdyphnbvjrn.supabase.co';
-const supabaseKey = 'sb_publishable_dWZAzZp4L9hZYgRwtSafug_9apA7sKM'; // public kulcs a Supabase Settingsben
-
-window.supabase = createClient(supabaseUrl, supabaseKey);
 
 supabase
   .from('quotes')
@@ -77,6 +71,7 @@ data.forEach(row => {
   quoteList.appendChild(li);
 });
 });
+
 
 
 
