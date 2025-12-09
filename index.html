@@ -221,22 +221,20 @@
     <script src="scripts/SignIn.js"></script>
     <script src="scripts/main.js" type="module"></script>
     <script> document.getElementById('last-modified').textContent = document.lastModified;</script>
-    <!--<script>
-        let blurClickCount = 0;
-        function openDevMode() {
-            blurClickCount++;
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script>
+  const supabaseUrl = 'https://wqerrkvnnwdyphnbvjrn.supabase.co';
+  const supabaseKey = 'sb_publishable_dWZAzZp4L9hZYgRwtSafug_9apA7sKM';
 
-            if (blurClickCount === 5) {
-                const blurredElements = document.querySelectorAll('#blurred');
+  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
 
-                blurredElements.forEach(el => {
-                    el.classList.remove('blurred');
-            })
-            console.log('🔓 Minden blur eltűnt az 5. kattintásra!')}};
-</script>-->
+  console.log("Supabase kliens:", supabase);
+  console.log("Auth modul:", supabase.auth);
+</script>
 </div>
 </body>
 </html>
+
 
 
 
