@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="Beluszky Aranyköpései.css">
     <link rel="icon" href="Mini Beluszky.png" type="image/x-icon">
     <link rel="shortcut icon" href="Mini Beluszky.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script>
+        const supabaseUrl = 'https://wqerrkvnnwdyphnbvjrn.supabase.co';
+        const supabaseKey = 'sb_publishable_dWZAzZp4L9hZYgRwtSafug_9apA7sKM';
+
+        const supabase = supabase.createClient(supabaseUrl, supabaseKey);
+
+        console.log("Supabase kliens:", supabase);
+        console.log("Auth modul:", supabase.auth);
+    </script>
 </head>
 <body>
     <header>
@@ -211,16 +221,6 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-<script>
-  const supabaseUrl = 'https://wqerrkvnnwdyphnbvjrn.supabase.co';
-  const supabaseKey = 'sb_publishable_dWZAzZp4L9hZYgRwtSafug_9apA7sKM';
-
-  const supabase = supabase.createClient(supabaseUrl, supabaseKey);
-
-  console.log("Supabase kliens:", supabase);
-  console.log("Auth modul:", supabase.auth);
-</script>
     <script src="scripts/BeluszkyAI.js"></script>
     <script src="scripts/Hirlap.js"></script>
     <script src="scripts/Nagyitas.js" type="module"></script>
@@ -234,6 +234,7 @@
 </div>
 </body>
 </html>
+
 
 
 
