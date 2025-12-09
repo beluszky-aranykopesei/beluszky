@@ -1,4 +1,4 @@
-import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2';
 import { showPopup } from './Nagyitas.js';
 import { copyToClipboard } from './Masolas.js';
 
@@ -77,3 +77,4 @@ data.forEach(row => {
   quoteList.appendChild(li);
 });
 });
+
